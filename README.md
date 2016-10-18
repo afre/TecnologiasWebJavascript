@@ -27,7 +27,7 @@ Para utilizar un [Link](https://github.com/adrianeguez/Tec_Web_Js_2016_B) debemo
 ## Imagenes 
 
 Para nosotros utilizar imagenes debemos de colocar un texto alternativo en brackets[] despues del caracter de exclamasion ! y el link de la imagen entre parentesis () 
-![Imagen de Js en color amarillo](http://nodeframework.com/assets/img/js.png "Javascript")
+![Imagen de Js en color amarillo](https://www.planet-source-code.com/vb/2010Redesign/images/LangugeHomePages/HTML5_CSS_JavaScript.png "Javascript")
 ## Formateo de Codigo
 
 Para nosotros utilizar el formateo de codigo dentro de texto plano debemos de utilizar el caracter `Tilde invertida`
@@ -99,7 +99,7 @@ ___
 ## Videos de Youtube
 
 Es uso puro de HTML dentro de markdown
-<a href="https://www.youtube.com/watch?v=650s9uWWr1o" target="_blank"><img src="http://nodeframework.com/assets/img/js.png" 
+<a href="https://www.youtube.com/watch?v=650s9uWWr1o" target="_blank"><img src="https://www.planet-source-code.com/vb/2010Redesign/images/LangugeHomePages/HTML5_CSS_JavaScript.png" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 
