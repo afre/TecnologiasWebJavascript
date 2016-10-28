@@ -100,20 +100,36 @@ gráficos <a href="#6">[6]</a>.
 
 <a name="nodejs"></a>
 ### Node.js
-Es una entorno de ejecución para JavaScript construido con el motor de JavaScript V8 de Chrome. Node.js usa un modelo de operaciones E/S sin bloqueo y orientado a eventos, que lo hace liviano y eficiente. El ecosistema de paquetes de Node.js, npm, es el ecosistema mas grande de librerías de código abierto en el mundo. <a href="#7">[7]</a>.
+Node.js es un entorno de Javascript, el cual se encuentra orientado a eventos asíncronos. 
+Está diseñado para la construcción de aplicaciones en redes escalables. Está influenciado 
+por sistemas como Event Machine de Ruby o Twisted de Python <a href="#7">[7]</a>.
 
 <a href="#cabecera">A la cabecera</a>
 
 <a name="github"></a>
 ### Github
-GitHub es una forja (plataforma de desarrollo colaborativo) para alojar proyectos utilizando el sistema de control de versiones Git. Utiliza el framework Ruby on Rails por GitHub, Inc. (anteriormente conocida como Logical Awesome). Desde enero de 2010, GitHub opera bajo el nombre de GitHub, Inc. El código se almacena de forma pública, aunque también se puede hacer de forma privada, creando una cuenta de pago. <a href="#8">[8]</a>.
+Github es un sitio web en el cual sus usuarios pueden subir una copia de su repositorio 
+Git. Permite que varias personas puedan colaborar fácilmente en un proyecto. Esto se 
+logra al proveer una localización centralizada para compartir el repositorio, una interfaz 
+web para visualizarlo y características como forking, pull request, issues y wikis que le 
+permite a los usuarios especificar, discutir y revisar los cambios con los equipos de 
+trabajo <a href="#8">[8]</a>.
 
 <a href="#cabecera">A la cabecera</a>
 
 <a name="brackets"></a>
 ### Brackets.io
-Es un editor de texto que facilita el diseño de páginas web para los navegadores. Esta 
-dirigido para desarrolladores web y desarrolladores front-end <a href="#9">[9]</a>.
+Es un editor de código open-source desarrollado por Adobe. Algunas de sus características 
+son el edición de código Inline, Live preview, etc. También tiene muchas extensiones útiles 
+tales como Emmet, Beauty, etc <a href="#9">[9]</a>. 
+
+Emmet es un kit de herramientas para desarrolladores web que mejoran el flujo de 
+trabajo sobre HTML y CSS. Toma la idea de los snippets, el programador puede utilizar 
+expresiones CSS-like que pueden ser analizadas gramaticalmente de forma dinánima 
+y producen una salida que depende de las abreviaciones usadas <a href="#10">[10]</a>.
+
+Beauty
+ 
 
 <a href="#cabecera">A la cabecera</a>
 
@@ -188,6 +204,10 @@ Available: http://www.w3schools.com/about/</a>
 _Redes de computadoras_. México: Pearson Educación, 2012, pp.569-573.</a>  
 <a name="6">[6] A. Arora, "Web Browsers", in 
 _Computer Fundamentals and Applications_. India: Vikas, 2015, pp.327-328.</a>  
+<a name="7">[7] Joyent Inc. (2016). Acerca de Node.js [Online]. 
+Available: https://nodejs.org/es/about/</a>  
+<a name="8">[8] P. Bell and B. Beer, "What is GitHub?", in 
+_Introducing GitHub_. US: O'Relly, 2015, pp.2-3.</a>  
 
 
 <br>
