@@ -19,8 +19,12 @@
 - <a href="#tema">Tema</a>
 - <a href="#objetivos">Objetivos</a>
 - <a href="#marco-teorico">Marco Teorico</a>
-  * <a href="#hist">Historia y Facts</a>
-  * <a href="#defhtml">Definicion HTML</a>
+  * <a href="#internet">Internet</a>
+  * <a href="#www">World Wide Web</a>
+  * <a href="#w3c">World Wide Web Consortium</a>
+  * <a href="#w3schools">W3Schools</a>
+  * <a href="#html">HTML</a>
+  * <a href="#navegador">Navegador</a>
 - <a href="#desarrollo">Desarrollo de la Práctica</a>
 - <a href="#conrec">Conclusiones y Recomendaciones</a> 
 
@@ -31,29 +35,61 @@ El tema de la práctica es: `Componentes HTML de una pagina web`
 <a name="objetivos"></a>
 ## Objetivos
 
-- Desarrollar el conocimiento Web
+- Desarrollar el conocimiento Web sobre el internet, la World Wide Web y el WWW Consortium.
 - Conocer herramientas de desarrolladores web como: postman, inspetor web
-- Aprender el uso de lenguaje HTML CSS
+- Aprender el uso de lenguaje HTML
 
 <a name="marco-teorico"></a>
 ## Marco Teorico
-<a name="defhtml"></a>
-### Definición HTML
+<a name="internet"></a>
+### Internet
+El internet no debe ser entendido como una sola red, sino como un conjunto de distintas 
+redes que emplean ciertos protocolos comunes y proveen determinados servicios. En 
+realidad, el internet no fue planeado; por lo que, en sus orígenes, nadie habría esperado
+el alcance que tiene en nuestros tiempos actuales, lo cual imposibilita 
+que pueda ser controlado <a href="#1">[1]</a>.
 
-En informática, la World Wide Web (WWW) o red informática mundial1 es un sistema de distribución de documentos de hipertexto o hipermedios interconectados y accesibles vía Internet. Con un navegador web, un usuario visualiza sitios web compuestos de páginas web que pueden contener texto, imágenes, vídeos u otros contenidos multimedia, y navega a través de esas páginas usando hiperenlaces. (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/World_Wide_Web))
-<br>
 <a href="#cabecera">A la cabecera</a>
+<a name="www"></a>
+### World Wide Web
+La World Wide Web, cuyas siglas son WWW, es un espacio de información en el cual los 
+ítems de interés, denominados como recursos, son identificados por identificadores 
+globales, llamados también URI (Uniform Resource Identifiers) <a href="#2">[2]</a>.
 
-<br><br>
-<p align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/WWW_logo_by_Robert_Cailliau.svg/240px-WWW_logo_by_Robert_Cailliau.svg.png" width="300" height="200">
-</p>
-<br><br>
-<a name="hist"></a>
-### Historia y Facts
+<a href="#cabecera">A la cabecera</a>
+<a name="w3c"></a>
+### World Wide Web Consortium
+La World Wide Web Consortium, cuyas siglas son W3C, es una comunidad internacional donde
+las organizaciones miembro, un staff a tiempo completo y el público en general trabajan juntos para 
+desarrollar estándares web. Es dirigida por Tim Berners-Lee y Jeffrey Jaffe. Su misión 
+es guiar a la web a su potencial completo <a href="#3">[3]</a>.
 
-La Web se desarrolló entre marzo de 1989 y diciembre de 1990.2 3 por el inglés Tim Berners-Lee con la ayuda del belga Robert Cailliau mientras trabajaban en el CERN en Ginebra, Suiza, y publicado en 1992. Desde entonces, Berners-Lee ha jugado un papel activo guiando el desarrollo de estándares Web (como los lenguajes de marcado con los que se crean las páginas web), y en los últimos años ha abogado por su visión de una Web semántica. Utilizando los conceptos de sus anteriores sistemas de hipertexto como ENQUIRE, el físico británico Tim Berners-Lee, un científico de la computación y en ese tiempo de los empleados del CERN, ahora director del World Wide Web Consortium (W3C), escribió una propuesta en marzo de 1989 con lo que se convertiría en la World Wide Web.4 la propuesta de 1989 fue destinada a un sistema de comunicación CERN pero Berners-Lee finalmente se dio cuenta que el concepto podría aplicarse en todo el mundo.5 En la CERN, la organización europea de investigación cerca de Ginebra, en la frontera entre Francia y Suiza,6 Berners-Lee y el científico de la computación belga Robert Cailliau propusieron en 1990 utilizar el hipertexto "para vincular y acceder a información de diversos tipos como una red de nodos en los que el usuario puede navegar a voluntad",7 y Berners-Lee terminó el primer sitio web en diciembre de ese año.8 Berners-Lee publicó el proyecto en el grupo de noticias alt.hypertext el 7 de agosto de 1991. (Fuente: <a href="https://es.wikipedia.org/wiki/World_Wide_Web">Wikipedia</a>)
-<br>
+<a href="#cabecera">A la cabecera</a>
+<a name="w3schools"></a>
+### W3Schools
+Es una págína para desarrolladores web, con varios tutoriales y referencias en lenguajes
+de desarrollo web, tales como: HTML, CSS, Javascript, PHP, SQL y Bootstrap. Su nombre se
+deriva de la WWW; sin embargo, no es un sitio afiliado a la W3C. Se creó en 1998 por 
+Refnes Data, una compañía de consultoría y desarrollo de software de Noruega 
+<a href="#4">[4]</a>.
+
+<a href="#cabecera">A la cabecera</a>
+<a name="html"></a>
+### HTML
+HTML significa "HyperText Markup Language", lo que en español viene a significar 
+Lenguaje de Marcado de Hiper Texto. Fue introducido con la web. Le permite a sus usuarios 
+desarrollar páginas web que incluyen texto, gráficos, videos, apuntadores a otras sitios, 
+etc. Permite describir cómo se va a dar formato a los documentos <a href="#5">[5]</a>.
+
+<a href="#cabecera">A la cabecera</a>
+<a name="navegador"></a>
+### Navegador
+Los navegadores son los programas que son usados para conseguir información de internet. 
+Estos ayudan a las personas no técnicas a navegar por internet, ya que son muy amigables
+con el usuario, evitando que este tenga que recordar ciertos comandos. Los principales 
+tipos de navegadores que podemos encontrar son de dos tipos: de solo texto y los 
+gráficos <a href="#6">[6]</a>.
+
 <a href="#cabecera">A la cabecera</a>
 
 
@@ -123,3 +159,24 @@ Para nosotros utilizar los Links dentro de Github debemos de hacer dos cosas:
 - Se aprendio el uso de HTML con Markdown
 - Conocimos herramientas de desarrollo web como postman e inspector web
 - Desarrollamos conocimientos de introducción Web
+
+<br>
+<a href="#cabecera">A la cabecera</a>
+
+## Bibliografía
+
+<a name="1">[1] A. Tanenbaum and D. Wetherall, "Internet", in _Redes de computadoras_. 
+México: Pearson Educación, 2012, pp.46-47.</a>  
+<a name="2">[2] W3C. (2004, Nov. 15). Architecture of the World Wide Web, Volume One 
+[Online]. Available: https://www.w3.org/TR/webarch/</a>  
+<a name="3">[3] W3C. (2016). About W3C [Online]. Available: https://www.w3.org/Consortium/</a>  
+<a name="4">[4] Refnes Data. (2016). About W3Schools [Online]. 
+Available: http://www.w3schools.com/about/</a>  
+<a name="5">[5] A. Tanenbaum and D. Wetherall, "Páginas web estáticas", in 
+_Redes de computadoras_. México: Pearson Educación, 2012, pp.569-573.</a>  
+<a name="6">[6] A. Arora, "Web Browsers", in 
+_Computer Fundamentals and Applications_. India: Vikas, 2015, pp.327-328.</a>  
+
+
+<br>
+<a href="#cabecera">A la cabecera</a>
