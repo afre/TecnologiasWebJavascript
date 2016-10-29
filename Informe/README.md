@@ -126,10 +126,95 @@ tales como Emmet, Beauty, etc <a href="#9">[9]</a>.
 Emmet es un kit de herramientas para desarrolladores web que mejoran el flujo de 
 trabajo sobre HTML y CSS. Toma la idea de los snippets, el programador puede utilizar 
 expresiones CSS-like que pueden ser analizadas gramaticalmente de forma dinánima 
-y producen una salida que depende de las abreviaciones usadas <a href="#10">[10]</a>.
+y producen una salida que depende de las abreviaciones usadas <a href="#10">[10]</a>. 
+Brackets junto a emmet manejan la siguiente sintaxis para simplificar el trabajo de 
+programación:  
+- Elementos. Puedes digitar cualquier palabra y esta sera transformada en un tag.  
 
-Beauty
- 
+Entrada:  
+```
+div
+```  
+Salida: 
+```html
+<div></div>
+```
+- Operadores de anidación
+  - `>`. Permite poner elementos dentro de otros.
+
+Entrada: 
+```
+ul>li
+```
+Salida:
+```html
+<ul>
+    <li></li>
+</ul>
+```
+  - `+`. Permite localizar elementos en el mismo nivel.
+  
+Entrada: 
+```
+div+p
+```
+Salida:
+```html
+<div></div>
+<p></p>
+```
+  - `^`. Permite subir de nivel en los elementos anidados.
+  
+Entrada: 
+```
+div>p^ul>li
+```
+Salida:
+```html
+<div>
+    <p></p>
+</div>
+<ul>
+    <li></li>
+</ul>
+```
+  - `*`. Permite definir el número de veces que se repetirá un elemento.
+  
+Entrada: 
+```
+ul>li*3
+```
+Salida:
+```html
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+```
+  - `()`. Permite agrupar subárboles.
+  
+Entrada: 
+```
+div>(ul>li)+ol>li
+```
+Salida:
+```html
+<div>
+    <ul>
+        <li></li>
+    </ul>
+    <ol>
+        <li></li>
+    </ol>
+</div>
+```
+- Operadores de atributos
+  - `#`. Permite insertar el atributo id en un tag.
+  - `.`. Permite insertar el atributo class en un tag.
+  - `[]`. Permite insertar atributos personalizados en un tag.
+  - `$`. Permite enumerar elementos.
+  - `@`. Modifica la enumeración de elementos.
 
 <a href="#cabecera">A la cabecera</a>
 
@@ -188,7 +273,6 @@ este organismo, ya que fue desarrollada por la empresa Refnes Data.
 la depuración de lenguajes web y para entender el funcionamiento de las distintas 
 páginas de internet.
 
-<br>
 <a href="#cabecera">A la cabecera</a>
 
 ## Bibliografía
@@ -208,7 +292,9 @@ _Computer Fundamentals and Applications_. India: Vikas, 2015, pp.327-328.</a>
 Available: https://nodejs.org/es/about/</a>  
 <a name="8">[8] P. Bell and B. Beer, "What is GitHub?", in 
 _Introducing GitHub_. US: O'Relly, 2015, pp.2-3.</a>  
+<a name="9">[9] M. Waikar, "Editors and IDEs", in 
+_Data-oriented Development with AngularJS_. UK: Packt Publishing, 2015, pp.122-123.</a>  
+<a name="10">[10] Emmet.io. (n.d.). Emmet - the essential toolkit for web-developers [Online]. 
+Available: http://docs.emmet.io/</a>  
 
-
-<br>
 <a href="#cabecera">A la cabecera</a>
