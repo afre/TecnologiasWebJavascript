@@ -33,6 +33,7 @@
   * <a href="#tags">Tags HTML básicos</a>
 - <a href="#desarrollo">Desarrollo de la Práctica</a>
 - <a href="#conrec">Conclusiones y Recomendaciones</a> 
+- <a href="#bibliografia">Bibliografía</a>
 
 <a name="tema"></a>
 ## Tema
@@ -430,6 +431,7 @@ para simplificar los procesos de digitación.
 
 <a href="#cabecera">A la cabecera</a>
 
+<a name="conrec"></a>
 ## Conclusiones y Recomendaciones
 
 - Se recomienda el uso de W3Schools como fuente de consulta por la amplia variedad 
@@ -445,6 +447,7 @@ páginas de internet.
 
 <a href="#cabecera">A la cabecera</a>
 
+<a name="bibliografia"></a>
 ## Bibliografía
 
 <a name="1">[1] A. Tanenbaum and D. Wetherall, "Internet", in _Redes de computadoras_. 
