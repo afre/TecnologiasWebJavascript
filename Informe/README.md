@@ -96,6 +96,14 @@ con el usuario, evitando que este tenga que recordar ciertos comandos. Los princ
 tipos de navegadores que podemos encontrar son de dos tipos: de solo texto y los 
 gráficos <a href="#6">[6]</a>.
 
+Una de las opciones de las que disponen los navegadores actuales son las herramientas 
+para desarrolladores. Estas son utilizadas para la depuración de lenguajes web. En el 
+caso de Google Chrome, en la pestaña Elements, es posible visualizar el código fuente de 
+las página web y modificar el mismo. En la pestaña Network, es posible recopilar los 
+registros de respuestas y solicitudes http, en los cuales podemos encontrar información 
+como: request url, request method, status code, remote address, response headers, 
+request headers y query string parameters.
+
 <a href="#cabecera">A la cabecera</a>
 
 <a name="nodejs"></a>
@@ -103,6 +111,12 @@ gráficos <a href="#6">[6]</a>.
 Node.js es un entorno de Javascript, el cual se encuentra orientado a eventos asíncronos. 
 Está diseñado para la construcción de aplicaciones en redes escalables. Está influenciado 
 por sistemas como Event Machine de Ruby o Twisted de Python <a href="#7">[7]</a>.
+
+Las instruccionesn utilizada para la instalación y configuración de un servidor en windows son:
+```
+npm install http-server
+http-server
+```
 
 <a href="#cabecera">A la cabecera</a>
 
@@ -129,119 +143,238 @@ expresiones CSS-like que pueden ser analizadas gramaticalmente de forma dinánim
 y producen una salida que depende de las abreviaciones usadas <a href="#10">[10]</a>. 
 Brackets junto a emmet manejan la siguiente sintaxis para simplificar el trabajo de 
 programación:  
-- Elementos. Puedes digitar cualquier palabra y esta sera transformada en un tag.  
+- Elementos. Puedes digitar cualquier palabra y esta sera transformada en un tag.
 
-Entrada:  
-```
-div
-```  
-Salida: 
-```html
-<div></div>
-```
+  Entrada:  
+  ```
+  div
+  ```  
+  Salida: 
+  ```html
+  <div></div>
+  ```
 - Operadores de anidación
   - `>`. Permite poner elementos dentro de otros.
 
-Entrada: 
-```
-ul>li
-```
-Salida:
-```html
-<ul>
-    <li></li>
-</ul>
-```
-  - `+`. Permite localizar elementos en el mismo nivel.
-  
-Entrada: 
-```
-div+p
-```
-Salida:
-```html
-<div></div>
-<p></p>
-```
-  - `^`. Permite subir de nivel en los elementos anidados.
-  
-Entrada: 
-```
-div>p^ul>li
-```
-Salida:
-```html
-<div>
-    <p></p>
-</div>
-<ul>
-    <li></li>
-</ul>
-```
-  - `*`. Permite definir el número de veces que se repetirá un elemento.
-  
-Entrada: 
-```
-ul>li*3
-```
-Salida:
-```html
-<ul>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
-```
-  - `()`. Permite agrupar subárboles.
-  
-Entrada: 
-```
-div>(ul>li)+ol>li
-```
-Salida:
-```html
-<div>
+    Entrada: 
+    ```
+    ul>li
+    ```
+    Salida:
+    ```html
     <ul>
         <li></li>
     </ul>
-    <ol>
+    ```
+  - `+`. Permite localizar elementos en el mismo nivel.
+  
+    Entrada: 
+    ```
+    div+p
+    ```
+    Salida:
+    ```html
+    <div></div>
+    <p></p>
+    ```
+  - `^`. Permite subir de nivel en los elementos anidados.
+  
+    Entrada: 
+    ```
+    div>p^ul>li
+    ```
+    Salida:
+    ```html
+    <div>
+        <p></p>
+    </div>
+    <ul>
         <li></li>
-    </ol>
-</div>
-```
+    </ul>
+    ```
+  - `*`. Permite definir el número de veces que se repetirá un elemento.
+  
+    Entrada: 
+    ```
+    ul>li*3
+    ```
+    Salida:
+    ```html
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    ```
+  - `()`. Permite agrupar subárboles.
+  
+    Entrada: 
+    ```
+    div>(ul>li)+ol>li
+    ```
+    Salida:
+    ```html
+    <div>
+        <ul>
+            <li></li>
+        </ul>
+        <ol>
+            <li></li>
+        </ol>
+    </div>
+    ```
 - Operadores de atributos
   - `#`. Permite insertar el atributo id en un tag.
+  
+    Entrada:  
+    ```
+    div#header
+    ```  
+    Salida: 
+    ```html
+    <div id="header"></div>
+    ```
   - `.`. Permite insertar el atributo class en un tag.
+  
+    Entrada:  
+    ```
+    div.page
+    ```  
+    Salida: 
+    ```html
+    <div class="page"></div>
+    ```
   - `[]`. Permite insertar atributos personalizados en un tag.
+  
+    Entrada:  
+    ```
+    td[colspan=3]
+    ```  
+    Salida: 
+    ```html
+    <td colspan="3"></td>
+    ```
   - `$`. Permite enumerar elementos.
+  
+    Entrada:  
+    ```
+    ul>li.item$*3
+    ```  
+    Salida: 
+    ```html
+    <ul>
+        <li class="item1"></li>
+        <li class="item2"></li>
+        <li class="item3"></li>
+    </ul>
+    ```
   - `@`. Modifica la enumeración de elementos.
+  
+    Entrada:  
+    ```
+    ul>li.item$@5*3
+    ```  
+    Salida: 
+    ```html
+    <ul>
+        <li class="item5"></li>
+        <li class="item6"></li>
+        <li class="item7"></li>
+    </ul>
+    ```
+- Text
+  - `{}`.Permite añadir texto a los elementos.
+  
+    Entrada:  
+    ```
+    a{Haga clic aquí}
+    ```  
+    Salida: 
+    ```html
+    <a href="">Haga clic aquí</a>
+    ```
+
+Beautify es un extensión de Brackets que permite aplicar formato a archivos javascript, 
+css y html. Este plugin puede ser usado para aplicar indentación al código y, de esta manera, 
+facilitar la lectura y la deteccción de errores en el mismo <a href="#11">[11]</a>.
 
 <a href="#cabecera">A la cabecera</a>
 
 <a name="metodo"></a>
 ### Métodos HTTP
-Algunos de los métodos más importantes son:  
-- GET
-- POST
-- PUT
-- DELETE
-<a href="#10">[10]</a>.
+Algunos de los conjuntos de métodos comunes para HTTP/1.1 son:  
+- GET. Solicita los datos desde un recurso específico. 
+- POST. Solicita que el servidor acepte a la entidad encerrada en la solicitud como un 
+nuevo subordinado del recurso específico.
+- PUT. Carga una representación de un URI específico.
+- DELETE. Borrar un recurso específico.
+- HEAD. Parecido al método GET, pero solo retorna cabeceras HTTP y no el cuerpo del 
+documento.
+- OPTIONS. Retorna el método HTTP que el servidor soporta.
+- CONNECT. Es usado cono un proxy que puede dinámicamente cambiar a un tunel.
+
+<a href="#12">[12]</a>
+
+Una herramienta que nos permite visualizar el funcionamiento de los métodos HTTP es 
+Postman. Esta aplicación puede ser instalada en el navegador Chrome como una extensión. 
+También, facilita la creación de APIs de manera más rápida <a href="#13">[13]</a>.
 
 <a href="#cabecera">A la cabecera</a>
 
 <a name="doctype"></a>
 ### DOCTYPE
-Una declaración de tipo de documento o DOCTYPE (del inglés document type declaration) asocia un documento SGML o XML particular con una definición de tipo de documento. En la forma serializada de un documento, este se manifiesta como una cadena corta de caracteres de marcado (markup) que se conforma con una sintaxis particular <a href="#11">[11]</a>.
+La declaración `<!DOCTYPE>` no suele ser considerada como un tag html, sino como una 
+instrucción para el navegador web acerca de la versión html en la cual la página está 
+escrita. Es lo primero que se pone en el documento html, inclusive antes del tag 
+`<html>`.
+
+<a href="#14">[14]</a>
 
 <a href="#cabecera">A la cabecera</a>
 <a name="statuscode"></a>
 ### Status Code HTTP
 Algunos ejemplos de status code HTTP son:  
-- 200 OK
-- 304 No modificado
-- 404 No encontrado
-- 500 Error intrno del servidor
-<a href="#12">[12]</a>.
+- 100 Continue. Significa que el cliente debe continuar con su solicitud.
+- 200 OK. Significa que la solicitud ha sido exitosa. La informacíon retornada depende del 
+método usado en el request.
+- 304 Not Modified. Signifa que el cliente ha realizado una solicitud GET condicional 
+y el acceso está permitido, pero el documento no ha sido modificado.
+- 400 Bad Request. Significa que la solicitud no puede ser entendida por el servidor 
+debido a errores en la sintaxis.
+- 403 Forbidden. Significa que el servidor entendió la solicitud, pero se niega a cumplirla.
+- 404 Not Found. Significa que el servidor no ha encontrada nada que esté emparejado 
+al Request-URI.
+- 500 Internal Server Error. Significa que el servidor encontró una condición 
+inesperada que le impidió completar la solicitud. 
+
+<a href="#15">[15]</a>
+
+<a href="#cabecera">A la cabecera</a>
+<a name="tags"></a>
+### Tags HTML básicos
+A continuación, se detallan algunas tags HTML:
+- `<!-- -->`. Define comentarios.
+- `<a>`. Define un hipervínculo. Tiene los siguientes atributos:
+  - `href`. Especifica la url de la página a la que dirige el link.
+  - `target`. Especifica donde abrir el documento vinculado.
+- `<body>`. Define el cuerpo del documento.
+- `<h1>` hasta `<h6>`. Define encabezados html.
+- `<head>`. Define información acerca del documento.
+- `<html>`. Define la raíz de un documento html.
+- `<img>`. Define una imagen. Tiene los siguientes atributos:
+  - `alt`. Define un texto alternativo para una imagen.
+  - `src`. Especifica la url de una imagen.
+- `<li>`. Define un ítem de una lista.
+- `<meta>`. Define metadatos acerca de un documento html. Tiene los siguientes atributos:
+  - `charset`. Especifica la codificación de caracteres para el documento html.
+- `<ol>`. Define una lista ordenada.
+- `<p>`. Define un párrafo.
+- `<style>`. Define información de estilo para un documento.
+- `<table>`. Define una tabla.
+- `<tr>`. Define una fila de una tabla.
+- `<ul>`. Define una lista no ordenada.
+
+<a href="#16">[16]</a>.
 
 <a href="#cabecera">A la cabecera</a>
 
@@ -249,14 +382,51 @@ Algunos ejemplos de status code HTTP son:
 ## Desarrollo del informe
 
 ### Herramientas para desarrolladores
-![DeveloperTools1](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/1.jpg?raw=true)
-![DeveloperTools1](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/2.jpg?raw=true)
+Se utilizó las pestañas Elements y Network de la herramientas para desarrolladores de Google Chrome para analizar el funcionamiento 
+de una página web, tanto a nivel de código fuente como las respuestas y solicitudes entre el cliente y el servidor.
+![DeveloperTools1](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/elements.jpg?raw=true)
+![DeveloperTools2](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/network1.jpg?raw=true)
+![DeveloperTools3](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/network2.jpg?raw=true)
+
+### Postman
+Se utilizó el plugin de Postman para visualizar las diferencias entre el método Post y Get.
+![Postaman](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/postman1.jpg?raw=true)
+![Postaman](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/postman2.jpg?raw=true)
+![Postaman](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/postman3.jpg?raw=true)
+![Postaman](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/postman4.jpg?raw=true)
+![Postaman](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/postman5.jpg?raw=true)
+![Postaman](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/postman6.jpg?raw=true)
+
+### Configurar un servidor en windows
+Se utilizó la herramienta de Node.js para la configuración del servidor.
+![nodejs](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/nodejs1.jpg?raw=true)
+![nodejs](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/nodejs2.jpg?raw=true)
+![nodejs](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/nodejs3.jpg?raw=true)
 
 ### Github
-![Github](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/3.jpg?raw=true)
+Se utilizó la herramienta GitHub para escritorio para subir el proyecto al repositorio y para la creación de branches.
+![Github](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/github1.jpg?raw=true)
+![Github](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/github2.jpg?raw=true)
 
-### Tags html
-![Tags](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/4.jpg?raw=true)
+### Instalación de extensiones para Brackets
+Se instaló los plugins de Emmet y Beautify para agilitar el proceso de programación.
+![brackets](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/brackets1.jpg?raw=true)
+![brackets](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/brackets2.jpg?raw=true)
+![brackets](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/brackets3.jpg?raw=true)
+
+### W3Schools
+Se utilizó la página web de w3schools como fuente de consulta para las etiquetas html.
+![brackets](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/w3schools1.jpg?raw=true)
+![brackets](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/w3schools2.jpg?raw=true)
+![brackets](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/w3schools3.jpg?raw=true)
+
+### Programación de una página web
+Se utilizó brackets para la programación de una página web sencilla. Para ello, se utilizó la funcionalidad de brackets 
+para simplificar los procesos de digitación.
+![web](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/web1.jpg?raw=true)
+![web](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/web2.jpg?raw=true)
+![web](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/web3.jpg?raw=true)
+![web](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/web4.jpg?raw=true)
 
 <a href="#cabecera">A la cabecera</a>
 
@@ -296,5 +466,17 @@ _Introducing GitHub_. US: O'Relly, 2015, pp.2-3.</a>
 _Data-oriented Development with AngularJS_. UK: Packt Publishing, 2015, pp.122-123.</a>  
 <a name="10">[10] Emmet.io. (n.d.). Emmet - the essential toolkit for web-developers [Online]. 
 Available: http://docs.emmet.io/</a>  
+<a name="11">[11] J Pilzer and D. Hamlett. (2016). Brackets Beautify 2.x [Online]. 
+Available: https://github.com/brackets-beautify/brackets-beautify</a>  
+<a name="12">[12] Refnes Data. (2016). HTTP Methods: GET vs. POST [Online]. 
+Available: http://www.w3schools.com/TAGS/ref_httpmethods.asp</a>  
+<a name="13">[13] J Posdot Technologies. (2016). Installing the Postman Chrome App [Online]. 
+Available: https://www.getpostman.com/docs/introduction</a>  
+<a name="14">[14] Refnes Data. (2016). HTTP <!DOCTYPE> Declaration [Online]. 
+Available: http://www.w3schools.com/TAGS/tag_doctype.asp</a>  
+<a name="15">[15] IETF. (1999). Hypertext Transfer Protocol - HTTP/1.1 [Online]. 
+Available: https://tools.ietf.org/html/rfc2616#page-58</a>  
+<a name="16">[16] Refnes Data. (2016). HTML Element Reference [Online]. 
+Available: http://www.w3schools.com/tags/default.asp</a>  
 
 <a href="#cabecera">A la cabecera</a>
