@@ -64,7 +64,10 @@
         
         //se recomienda usar comillas simples en arreglso para 
         //evitar confusiones en json
-        var arregloString=["a",'2','c'];
+
+        
+        
+        /*        var arregloString=["a",'2','c'];
         console.log(arregloString);
         
         var arregloNumeros=[2,3,4];
@@ -85,24 +88,83 @@
         var arregloTodo=["a",'1',555,66.099999,true,undefined,null];
         console.log(arregloTodo);
         console.log(arregloTodo.length);
+        */
+        
+        
+        //es mejor si se pone las propiedades entre comillas simples
+        var genero='thriller';
+        var alex={
+            'nombre':'alex',
+            'apellido':'freire',
+            edad:100,
+            musica:['rock','metal','punk'],
+            peliculas:[{
+                genero:'comedia',
+                rating:'5'
+            },{
+                genero:genero,
+                rating:8.9
+            }],
+            getNombre:function(){
+                //return alex.nombre;  
+                return this.nombre;
+            }, 
+            getApellido:function(){
+                return this.apellido;
+            },
+            setApellido:function(nuevoApellido){
+                this.apellido=nuevoApellido;
+            }
+            
+        };
+        
+    console.log('Acceder Nombre');
+        console.log(alex.nombre);
+        
+        console.log('Acceder apellido');
+        console.log(alex.apellido);
+        console.log('Acceder musica');
+        console.log(alex.musica);
+        
+        /*puedo mandar funciones como parametros en javascript*/
+        //console.log(alex.getNombre);
+        
+        console.log(alex.getNombre());
+        console.log(alex.getApellido());
+        alex.setApellido('Bustos');
+        console.log(alex.getApellido());
+        
+        
+/*        function getNombreAlex(){
+         return alex.nombre;   
+        }*/
         
         
         
         
+        /*console.log(getNombreAlex());*/
         
+    /*console.log(alex);*/
         
-        
-        
-        
-        
-                
-        
-        
-       
-
         
         
     </script>
+    
+    
+<!--    no se utiliza xml en internet porque es mas pesado que json, en xml necesito abrir y cerrar tags, en cambio, en json no-->
+<!--    <adria>
+       <nombre>
+        adrian
+    </nombre>
+    <apellid>
+        Eguez
+    </apellid>
+    <edad>
+        100
+    </edad>
+    </adria>-->
+    
+    
 </head>
 <body>
     
