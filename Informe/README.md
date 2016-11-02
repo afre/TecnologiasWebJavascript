@@ -77,53 +77,46 @@ Los grid systems escalan hasta 12 columnas mientras el tamaño del dispositivo o
 ## Desarrollo del informe
 
 ### Selector CSS basado en el nombre del elemento
-Se utilizó las pestañas Elements y Network de la herramientas para desarrolladores de Google Chrome para analizar el funcionamiento 
-de una página web, tanto a nivel de código fuente como las respuestas y solicitudes entre el cliente y el servidor.
-![DeveloperTools1](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/elements.jpg?raw=true)
-![DeveloperTools2](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/network1.jpg?raw=true)
-![DeveloperTools3](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/network2.jpg?raw=true)
+Se aplicó una hoja de estilos teniendo como selector el nombre de los tag sobre los cuales se va a aplicar dicho estilo.
+![selectorElemento](https://github.com/afre/TecnologiasWebJavascript/blob/02-html/Informe/Imagenes/selectorElemento.jpg?raw=true)
+![selectorElemento](https://github.com/afre/TecnologiasWebJavascript/blob/02-html/Informe/Imagenes/selectorElemento2.jpg?raw=true)
 
 ### Selector CSS basado en el id
-Se utilizó el plugin de Postman para visualizar las diferencias entre el método Post y Get.
-![Postaman](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/postman1.jpg?raw=true)
-![Postaman](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/postman2.jpg?raw=true)
-![Postaman](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/postman3.jpg?raw=true)
-![Postaman](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/postman4.jpg?raw=true)
-![Postaman](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/postman5.jpg?raw=true)
-![Postaman](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/postman6.jpg?raw=true)
+Se aplicó una hoja de estilos teniendo como selector el valor del atributo id de los tag.
+![selectorId](https://github.com/afre/TecnologiasWebJavascript/blob/02-html/Informe/Imagenes/selectorId.jpg?raw=true)
+![selectorId](https://github.com/afre/TecnologiasWebJavascript/blob/02-html/Informe/Imagenes/selectorId2.jpg?raw=true)
 
 ### Selector CSS basado en la clase
-Se utilizó la herramienta de Node.js para la configuración del servidor.
-![nodejs](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/nodejs1.jpg?raw=true)
-![nodejs](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/nodejs2.jpg?raw=true)
-![nodejs](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/nodejs3.jpg?raw=true)
+Se aplicó una hoja de estilo teniendo como selector el valor del atributo clase de los tag.
+![selectorClase](https://github.com/afre/TecnologiasWebJavascript/blob/02-html/Informe/Imagenes/selectorClase.jpg?raw=true)
+![selectorClase](https://github.com/afre/TecnologiasWebJavascript/blob/02-html/Informe/Imagenes/selectorClase2.jpg?raw=true)
+
+### Selectores CSS combinados
+Se aplicó una hoja de estilo combinando los distinto tipos de selectores.
+![selectorCombinado](https://github.com/afre/TecnologiasWebJavascript/blob/02-html/Informe/Imagenes/selectorCombinado.jpg?raw=true)
+![selectorCombinado](https://github.com/afre/TecnologiasWebJavascript/blob/02-html/Informe/Imagenes/selectorCombinado2.jpg?raw=true)
 
 ### Configuración de la CDN de Bootstrap
-Se utilizó la herramienta GitHub para escritorio para subir el proyecto al repositorio y para la creación de branches.
-![Github](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/github1.jpg?raw=true)
-![Github](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/github2.jpg?raw=true)
+Se añade la respectiva instrucción para definir la cdn de bootstrap.
+![Bootstrap](https://github.com/afre/TecnologiasWebJavascript/blob/02-html/Informe/Imagenes/cdnBootstrap.jpg?raw=true)
 
 ### Creación de un grid system
-Se instaló los plugins de Emmet y Beautify para agilitar el proceso de programación.
-![brackets](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/brackets1.jpg?raw=true)
-![brackets](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/brackets2.jpg?raw=true)
-![brackets](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/brackets3.jpg?raw=true)
+Se creo grid system de diferentes tipos usando bootstrap con diseño web responsive.
+![gridSystem](https://github.com/afre/TecnologiasWebJavascript/blob/02-html/Informe/Imagenes/gridSystem.jpg?raw=true)
+![gridSystem](https://github.com/afre/TecnologiasWebJavascript/blob/02-html/Informe/Imagenes/gridSystem2.jpg?raw=true)
+![gridSystem](https://github.com/afre/TecnologiasWebJavascript/blob/02-html/Informe/Imagenes/gridSystem3.jpg?raw=true)
 
 <a href="#cabecera">A la cabecera</a>
 
 <a name="conrec"></a>
 ## Conclusiones y Recomendaciones
 
-- Se recomienda el uso de W3Schools como fuente de consulta por la amplia variedad 
-de información sobre los lenguajes web.
-- Se aconseja el uso de Emmet con Brackets para facilitar la programación web.
-- La W3C es un consorcio que establece los estándares bajos los cuales se rigen la 
-World Wide Web. 
-- La página W3Schools, a pesar de tener un nombre parecido a la W3C, es independiente de 
-este organismo, ya que fue desarrollada por la empresa Refnes Data.
-- Las herramientas para desarrolladores de los navegadores son de bastante utilidad en 
-la depuración de lenguajes web y para entender el funcionamiento de las distintas 
-páginas de internet.
+- Se recomienda prestar atención al orden en se aplican los estilos en el documento html; ya que, al aplicarse en cascada, unos estilos 
+reemplazan a otros.
+- A través de CSS es posible obtener diseños de páginas web más agradables al usuario final.
+- Se puede recurrir al framework de Bootstrap para aplicar un diseño web responsive que se adapte al tamaño de los distintos dispoitivos.
+- El CSS puede incluirse en el mismo documento html o en un archivo diferente que tenga como extensión .css .
+- Se recomienda tomar en consideración el número máximo de columnas de un grid system, el cual es 12, al momento de diseñar una tabla responsive.
 
 <a href="#cabecera">A la cabecera</a>
 
