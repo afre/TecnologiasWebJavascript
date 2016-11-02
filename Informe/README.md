@@ -22,6 +22,7 @@
   * <a href="#css">CSS</a>
   * <a href="#responsive">Diseño Web Responsive</a>
   * <a href="#bootstrap">Bootstrap</a>
+  * <a href="#grid">Grid system</a>
 - <a href="#desarrollo">Desarrollo de la Práctica</a>
 - <a href="#conrec">Conclusiones y Recomendaciones</a> 
 - <a href="#bibliografia">Bibliografía</a>
@@ -48,25 +49,41 @@ CSS es un lenguaje de hojas de estilos usado para describir la presentación de 
 ### Diseño web responsive
 El diseño web responsive es una serie de técnicas y tecnologías que son combinadas para desarrollar aplicaciones en un rango de dispositivos de la manera más práctica como sea posible <a href="#2">[2]</a>. Puede ser entendido como una estrategia para proveer layouts personalizados a los dispositivos basados en el tamaño de la ventana del navegador <a href="#3">[3]</a>. Esto se lo hace para asegurar que el usuario disfrute de la mejor experiencia posible cuando visita páginas web.
 
-
 <a href="#cabecera">A la cabecera</a>
 <a name="bootstrap"></a>
 ### Bootstrap
- <a href="#4">[4]</a>.
+Bootstrap es uno de los frameworks front-end y de los proyectos open source más populares a nivel mundial. Originalmente, fue diseñado y desarrollado por Twitter, bajo el nombre de Twitter Blueprint. Con Bootstrap 2, se añadió la funcionalidad responsive como una hoja de estilo opcional. Con la llegada de Bootstrap 3, el diseño web responsive fue añadido por defecto con un enfoque para aplicaciones móviles <a href="#4">[4]</a>.
+
+<a href="#cabecera">A la cabecera</a>
+<a name="grid"></a>
+### Grid system
+Los grid systems escalan hasta 12 columnas mientras el tamaño del dispositivo o de la ventana de visualización aumenta. Son usados para crear layouts de páginas a través de una serie de filas y columnas. Las opciones del grid se pueden apreciar a través de la siguiente tabla <a href="#5">[5]</a>.
+
+||Dispositivos extra pequeños|Dispositivos pequeños|Dispositivos medianos|Dispositivos grandes
+|---|---|---|---|---
+|Comportamiento del grid|Horizontal en todo momento|Colapsado al iniciar, horizontal por encima de los breakpoints|Colapsado al iniciar, horizontal por encima de los breakpoints|Colapsado al iniciar, horizontal por encima de los breakpoints
+|Ancho del contenedor|Ninguno|750px|970px|1170px
+|Prefijo de clase|.col-xs-|.col-sm-|.col-md-|.col.lg-
+|Número de columnas|12|12|12|12
+|Ancho de columna|Automático|62px|81px|97px
+|Ancho del gutter|30px|30px|30px|30px
+|Anidable|Sí|Sí|Sí|Sí
+|Offsets|Sí|Sí|Sí|Si
+|Orden de columnas|Sí|Sí|Sí|Sí
 
 <a href="#cabecera">A la cabecera</a>
 
 <a name="desarrollo"></a>
 ## Desarrollo del informe
 
-### Herramientas para desarrolladores
+### Selector CSS basado en el nombre del elemento
 Se utilizó las pestañas Elements y Network de la herramientas para desarrolladores de Google Chrome para analizar el funcionamiento 
 de una página web, tanto a nivel de código fuente como las respuestas y solicitudes entre el cliente y el servidor.
 ![DeveloperTools1](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/elements.jpg?raw=true)
 ![DeveloperTools2](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/network1.jpg?raw=true)
 ![DeveloperTools3](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/network2.jpg?raw=true)
 
-### Postman
+### Selector CSS basado en el id
 Se utilizó el plugin de Postman para visualizar las diferencias entre el método Post y Get.
 ![Postaman](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/postman1.jpg?raw=true)
 ![Postaman](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/postman2.jpg?raw=true)
@@ -75,36 +92,22 @@ Se utilizó el plugin de Postman para visualizar las diferencias entre el métod
 ![Postaman](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/postman5.jpg?raw=true)
 ![Postaman](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/postman6.jpg?raw=true)
 
-### Configurar un servidor en windows
+### Selector CSS basado en la clase
 Se utilizó la herramienta de Node.js para la configuración del servidor.
 ![nodejs](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/nodejs1.jpg?raw=true)
 ![nodejs](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/nodejs2.jpg?raw=true)
 ![nodejs](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/nodejs3.jpg?raw=true)
 
-### Github
+### Configuración de la CDN de Bootstrap
 Se utilizó la herramienta GitHub para escritorio para subir el proyecto al repositorio y para la creación de branches.
 ![Github](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/github1.jpg?raw=true)
 ![Github](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/github2.jpg?raw=true)
 
-### Instalación de extensiones para Brackets
+### Creación de un grid system
 Se instaló los plugins de Emmet y Beautify para agilitar el proceso de programación.
 ![brackets](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/brackets1.jpg?raw=true)
 ![brackets](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/brackets2.jpg?raw=true)
 ![brackets](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/brackets3.jpg?raw=true)
-
-### W3Schools
-Se utilizó la página web de w3schools como fuente de consulta para las etiquetas html.
-![brackets](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/w3schools1.jpg?raw=true)
-![brackets](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/w3schools2.jpg?raw=true)
-![brackets](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/w3schools3.jpg?raw=true)
-
-### Programación de una página web
-Se utilizó brackets para la programación de una página web sencilla. Para ello, se utilizó la funcionalidad de brackets 
-para simplificar los procesos de digitación.
-![web](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/web1.jpg?raw=true)
-![web](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/web2.jpg?raw=true)
-![web](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/web3.jpg?raw=true)
-![web](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/web4.jpg?raw=true)
 
 <a href="#cabecera">A la cabecera</a>
 
@@ -133,5 +136,9 @@ páginas de internet.
 Australia: SitePoint, 2013, pp.1-2.</a>  
 <a name="3">[3] J. Robbins, "Responsive Web Design", in _Learning Web Design_. 
 Canada: O'Reilly, 2012, pp.38-40.</a>  
+<a name="4">[4] Bootstrap Core Team. (2016). About 
+[Online]. Available: http://getbootstrap.com/about/</a>  
+<a name="5">[5] Bootstrap Core Team. (2016). CSS 
+[Online]. Available: http://getbootstrap.com/css/</a>  
 
 <a href="#cabecera">A la cabecera</a>
