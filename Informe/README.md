@@ -98,7 +98,7 @@ Se aplicó una hoja de estilo combinando los distinto tipos de selectores.
 
 ### Configuración de la CDN de Bootstrap
 Se añade la respectiva instrucción para definir la cdn de bootstrap.
-![Bootstrap](https://github.com/afre/TecnologiasWebJavascript/blob/02-html/Informe/Imagenes/cdnBootstrap.jpg?raw=true)
+![bootstrap](https://github.com/afre/TecnologiasWebJavascript/blob/02-html/Informe/Imagenes/cdnBootstrap.jpg?raw=true)
 
 ### Creación de un grid system
 Se creo grid system de diferentes tipos usando bootstrap con diseño web responsive.
