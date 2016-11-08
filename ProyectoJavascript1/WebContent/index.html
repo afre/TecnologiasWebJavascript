@@ -22,7 +22,7 @@
         }*/
        
         
-        for(var i=10;i>0;i--){
+/*        for(var i=10;i>0;i--){
         console.log(count);
             if(count%2==0){
                console.log('El numero '+count+' es par.'); 
@@ -30,6 +30,15 @@
                 console.log('El numero '+count+' es impar.'); 
             }
             arregloNumero.push(count);
+            count--;
+        }*/
+        
+        while(count>=2&&count<=10){
+            //console.log(count);
+            if(count%2==0){
+               console.log('El numero '+count+' es par.'); 
+            }
+            //arregloNumero.push(count);
             count--;
         }
         
@@ -50,9 +59,26 @@
         }
         */
           for(monthNumber;monthNumber<=monthsToPrint;monthNumber++){
-            numSheep*=4;
-            console.log("There will be "+numSheep+" sheep after "+monthNumber+ " month(s)!");
             
+                        
+              numSheep*=4;
+               console.log("There will be "+numSheep+" sheep after "+monthNumber+ " month(s)!");   
+              if(monthNumber%4==0){
+                  numSheep*=0.75;
+                  console.log("Removing "+numSheep+" sheep from the population.");
+              }
+              else if(numSheep>10000){
+                  numSheep/=2;
+                
+                     console.log("Removing "+numSheep+" sheep from the population.");
+              }else{
+                  
+                     console.log("Removing 0 sheep from the population.");
+              }
+              
+            
+            
+            //Removing number sheep from the population.
         }
   
    /*     var texto="javascript";
