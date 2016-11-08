@@ -123,6 +123,18 @@
         
         console.log(eightiesMovies[1][4]);
         
+        var arreglo=[1,"ksdfkj",2,"333",true,false,undefined,null,89,9999,0.99];
+        
+        function contarStrings(array){
+            var contarStrings=0;
+            for(var i=0;i<array.length;i++){
+            if(typeof array[i]=="number"){
+                contarStrings++;
+            }}
+            return contarStrings;
+        }
+        
+        console.log(contarStrings(arreglo));
    /*     var texto="javascript";
         console.log(texto);
         
