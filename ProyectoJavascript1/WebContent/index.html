@@ -5,6 +5,38 @@
     <title>Document</title>
     <script>
     //alert('hola');
+        
+        var count=10;
+        var arregloNumero=[];
+        var objetoVacio={};
+        console.log(arregloNumero);
+        while(count>0){
+            console.log(count);
+            if(count%2==0){
+               console.log('El numero '+count+' es par.'); 
+            }else{
+                console.log('El numero '+count+' es impar.'); 
+            }
+            arregloNumero.push(count);
+            count--;
+        }
+        arregloNumero.pop();
+        arregloNumero.splice(0,1);
+        console.log('Se acaba');
+        console.log(arregloNumero);
+        
+        
+        var numSheep=4;
+        var monthNumber=1;
+        var monthsToPrint=12;
+        
+        while(monthNumber<=monthsToPrint){
+            numSheep*=4;
+            console.log("There will be "+numSheep+" sheep after "+monthNumber+ " month(s)!");
+            monthNumber++;
+        }
+        
+         
   
    /*     var texto="javascript";
         console.log(texto);
@@ -92,7 +124,7 @@
         
         
         //es mejor si se pone las propiedades entre comillas simples
-        var genero='thriller';
+      /*  var genero='thriller';
         var alex={
             'nombre':'alex',
             'apellido':'freire',
@@ -124,15 +156,15 @@
         console.log('Acceder apellido');
         console.log(alex.apellido);
         console.log('Acceder musica');
-        console.log(alex.musica);
+        console.log(alex.musica);*/
         
         /*puedo mandar funciones como parametros en javascript*/
         //console.log(alex.getNombre);
         
-        console.log(alex.getNombre());
+       /* console.log(alex.getNombre());
         console.log(alex.getApellido());
         alex.setApellido('Bustos');
-        console.log(alex.getApellido());
+        console.log(alex.getApellido());*/
         
         
 /*        function getNombreAlex(){
