@@ -6,10 +6,10 @@
     <script>
     //alert('hola');
         
-        var count=10;
+/*        var count=10;
         var arregloNumero=[];
         var objetoVacio={};
-        console.log(arregloNumero);
+        console.log(arregloNumero);*/
  /*       while(count>0){
             console.log(count);
             if(count%2==0){
@@ -33,16 +33,16 @@
             count--;
         }*/
         
-        while(count>=2&&count<=10){
+/*        while(count>=2&&count<=10){
             //console.log(count);
             if(count%2==0){
                console.log('El numero '+count+' es par.'); 
             }
             //arregloNumero.push(count);
             count--;
-        }
+        }*/
         
-        arregloNumero.pop();
+/*        arregloNumero.pop();
         arregloNumero.splice(0,1);
         console.log('Se acaba');
         console.log(arregloNumero);
@@ -50,7 +50,7 @@
         
         var numSheep=4;
         var monthNumber=1;
-        var monthsToPrint=12;
+        var monthsToPrint=12;*/
         
 /*        while(monthNumber<=monthsToPrint){
             numSheep*=4;
@@ -58,7 +58,7 @@
             monthNumber++;
         }
         */
-          for(monthNumber;monthNumber<=monthsToPrint;monthNumber++){
+/*          for(monthNumber;monthNumber<=monthsToPrint;monthNumber++){
             
                         
               numSheep*=4;
@@ -81,7 +81,7 @@
             
             //Removing number sheep from the population.
         }
-        
+        */
        /* var respuesta=prompt("hola, dime tu nombre");
         console.log(parseInt(respuesta));*/
         
@@ -95,28 +95,28 @@
         console.log(multiplicar(num1,num2,num3));*/
   
         
-        function mayor(num1, num2){
+/*        function mayor(num1, num2){
             if(num1>num2){
                 return num1;
             }else{
                 return num2;
             }
-        }
+        }*/
         
-        console.log(mayor(0,0.999999));
+        /*console.log(mayor(0,0.999999));
         
         function mystery(x,y){
             return 4*x*y+3*y+5;
         }
         
         console.log(mystery(4,7));
-        
+        */
         /*function feedPerRanger(rangers,sheeps){
          alert("Each Park Ranger should load "+2*sheeps/rangers+" libs of feed today");
         }
         
         feedPerRanger(5,20);*/
-        
+        /*
         var movie1=[16, "Candles"];
         var movie2=[3, "Men", "and","a","Baby"];
         var eightiesMovies=[movie1, movie2];
@@ -134,7 +134,7 @@
             return contarStrings;
         }
         
-        console.log(contarStrings(arreglo));
+        console.log(contarStrings(arreglo));*/
    /*     var texto="javascript";
         console.log(texto);
         
@@ -275,7 +275,51 @@
         
     /*console.log(alex);*/
         
+        var nombreFuncion=function(){
+            console.log('nombFuncion');
+            
+        }
         
+        nombreFuncion();
+        
+        
+        function nombre(){
+            console.log('nomb');
+        }
+        nombre();
+        
+      var passengers=[["Thomas","Meeks"],["Gregg","Pollack"],["Christine","Wong"],["Dan","McGaw"]];  
+                
+        var modifiedNames=passengers.map(function(arrayCell){
+            return arrayCell[0]+arrayCell[1];
+            
+        });
+        console.log(modifiedNames);
+        
+        /*modifiedNames.map(function(nombre){
+            alert(nombre);
+        });*/
+        
+        
+        var puzzlers=[function(input){
+            return 3*input-8;
+        },function(input){
+            return Math.pow(input+2,3);
+        },function(input){
+            return Math.pow(input,2)-9;
+        },function(input){
+            return input%4;
+        }];
+        
+        console.log(puzzlers[0](5));
+        console.log(puzzlers[1](5));
+        console.log(puzzlers[2](5));
+        console.log(puzzlers[3](5));
+        
+        console.log(puzzlers[0](7));
+        console.log(puzzlers[1](7));
+        console.log(puzzlers[2](7));
+        console.log(puzzlers[3](7));
         
     </script>
     
