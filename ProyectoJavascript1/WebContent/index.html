@@ -321,31 +321,34 @@
         console.log(puzzlers[2](7));
         console.log(puzzlers[3](7));
         
-/*        var userChoice=prompt("Ingrese una opción entre 1,2 o 3");
+       var userChoice=prompt("Ingrese una opción entre 1,2 o 3");
        
         function adventureSelector(userChoice){
             if(userChoice==1){
+                
                 return function(){
                     alert("You selected the Vines of Doom!");
-                }}
+                }();
+            }
                 else if(userChoice==2){
                     return function(){
                         alert("Looks like you want the Lake of Despair!");
-                    }}else{
+                    }();
+                }else{
                         return function(){
                             alert("The Caves of Catastrophe!");
-                        }
+                        }();
                     }
                 }
         
         
         
         adventureSelector(userChoice);
-        */
+        
         
         var appyAndEmpty=function(input, queue){
             for(var i=0;i<queue.length+i;i++){
-                input=queue[i](input);
+                input=queue[0](input);
                 queue.shift();
             }
             
