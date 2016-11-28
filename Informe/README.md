@@ -1,4 +1,4 @@
-# Introducción CSS
+# Diseño, calidad WAI, validación y SEO
 
 ### Materia : `Tecnologías Web con JavaScript`
 
@@ -6,11 +6,11 @@
 <img src="http://www.javatpoint.com/images/javascript/javascript_logo.png" width="300" height="200">
 </p>
 
-### Tema : `Introducción CSS` 
-### Fecha : `2016-10-25`
+### Tema : `Diseño, calidad WAI, validación y SEO` 
+### Fecha : `2016-10-26`
 ### Estudiante : `Alex José Freire Bustos`
 ### Profesor : `Tania Calle - Adrian Eguez`
-### Número de informe : `2`
+### Número de informe : `3`
 
 <a name="cabecera"></a>
 ## Índice de contenidos
@@ -19,17 +19,17 @@
 - <a href="#tema">Tema</a>
 - <a href="#objetivos">Objetivos</a>
 - <a href="#marco-teorico">Marco Teorico</a>
-  * <a href="#css">CSS</a>
-  * <a href="#responsive">Diseño Web Responsive</a>
-  * <a href="#bootstrap">Bootstrap</a>
-  * <a href="#grid">Grid system</a>
+  * <a href="#webdesign">Web Design</a>
+  * <a href="#webwai">Web WAI</a>
+  * <a href="#webvalidation">Web Validation</a>
+  * <a href="#webseo">Web SEO</a>
 - <a href="#desarrollo">Desarrollo de la Práctica</a>
 - <a href="#conrec">Conclusiones y Recomendaciones</a> 
 - <a href="#bibliografia">Bibliografía</a>
 
 <a name="tema"></a>
 ## Tema
-El tema de la práctica es: `Introducción CSS`
+El tema de la práctica es: `Diseño, calidad WAI, validación y SEO`
 
 <a name="objetivos"></a>
 ## Objetivos
@@ -40,36 +40,24 @@ El tema de la práctica es: `Introducción CSS`
 
 <a name="marco-teorico"></a>
 ## Marco Teorico
-<a name="css"></a>
-### CSS
-CSS es un lenguaje de hojas de estilos usado para describir la presentación de documentos escritos en html u otros lenguajes de marcado. El significado de sus siglas es Cascading Style Sheets. Describe cómo los elementos estructurados son representados en la pantalla o en otros medios. CSS permite ajustar la presentación de un documento de acuerdo al medio de destino <a href="#1">[1]</a>.
+<a name="webdesign"></a>
+### Web Design
+ <a href="#1">[1]</a>.
 
 <a href="#cabecera">A la cabecera</a>
-<a name="responsive"></a>
-### Diseño web responsive
-El diseño web responsive es una serie de técnicas y tecnologías que son combinadas para desarrollar aplicaciones en un rango de dispositivos de la manera más práctica como sea posible <a href="#2">[2]</a>. Puede ser entendido como una estrategia para proveer layouts personalizados a los dispositivos basados en el tamaño de la ventana del navegador <a href="#3">[3]</a>. Esto se lo hace para asegurar que el usuario disfrute de la mejor experiencia posible cuando visita páginas web.
+<a name="webwai"></a>
+### Web WAI
+ <a href="#2">[2]</a>. 
 
 <a href="#cabecera">A la cabecera</a>
-<a name="bootstrap"></a>
-### Bootstrap
-Bootstrap es uno de los frameworks front-end y de los proyectos open source más populares a nivel mundial. Originalmente, fue diseñado y desarrollado por Twitter, bajo el nombre de Twitter Blueprint. Con Bootstrap 2, se añadió la funcionalidad responsive como una hoja de estilo opcional. Con la llegada de Bootstrap 3, el diseño web responsive fue añadido por defecto con un enfoque para aplicaciones móviles <a href="#4">[4]</a>.
+<a name="webvalidation"></a>
+### Web Validation
+ <a href="#3">[3]</a>.
 
 <a href="#cabecera">A la cabecera</a>
-<a name="grid"></a>
-### Grid system
-Los grid systems escalan hasta 12 columnas mientras el tamaño del dispositivo o de la ventana de visualización aumenta. Son usados para crear layouts de páginas a través de una serie de filas y columnas. Las opciones del grid se pueden apreciar a través de la siguiente tabla <a href="#5">[5]</a>.
-
-||Dispositivos extra pequeños|Dispositivos pequeños|Dispositivos medianos|Dispositivos grandes
-|---|---|---|---|---
-|Comportamiento del grid|Horizontal en todo momento|Colapsado al iniciar, horizontal por encima de los breakpoints|Colapsado al iniciar, horizontal por encima de los breakpoints|Colapsado al iniciar, horizontal por encima de los breakpoints
-|Ancho del contenedor|Ninguno|750px|970px|1170px
-|Prefijo de clase|.col-xs-|.col-sm-|.col-md-|.col.lg-
-|Número de columnas|12|12|12|12
-|Ancho de columna|Automático|62px|81px|97px
-|Ancho del gutter|30px|30px|30px|30px
-|Anidable|Sí|Sí|Sí|Sí
-|Offsets|Sí|Sí|Sí|Si
-|Orden de columnas|Sí|Sí|Sí|Sí
+<a name="webseo"></a>
+### Web SEO
+ <a href="#4">[4]</a>.
 
 <a href="#cabecera">A la cabecera</a>
 
