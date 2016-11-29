@@ -215,8 +215,8 @@ reemplazan a otros.
 
 <a name="1">[1] Refnes Data. (2016). Web Design 
 [Online]. Available: http://w3schools.bootcss.com/website/web_design.html</a>  
-<a name="1">[2] C. Sharkie and A. Fisher, "Becoming Responsive", in _Jump Start Responsive Web Design_. 
-Australia: SitePoint, 2013, pp.1-2.</a>  
+<a name="2">[2] Refnes Data. (2016). Web Design 
+[Online]. Available: http://w3schools.bootcss.com/website/web_quality.html</a>  
 <a name="3">[3] J. Robbins, "Responsive Web Design", in _Learning Web Design_. 
 Canada: O'Reilly, 2012, pp.38-40.</a>  
 <a name="4">[4] Bootstrap Core Team. (2016). About 
