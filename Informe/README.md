@@ -20,6 +20,7 @@
 - <a href="#objetivos">Objetivos</a>
 - <a href="#marco-teorico">Marco Teorico</a>
   * <a href="#webdesign">Web Design</a>
+  * <a href="#webquality">Web Quality</a>
   * <a href="#webwai">Web WAI</a>
   * <a href="#webvalidation">Web Validation</a>
   * <a href="#webseo">Web SEO</a>
@@ -44,34 +45,34 @@ El tema de la práctica es: `Diseño, calidad, WAI, validación y SEO`
 ### Web Design
 Uno de los aspectos importantes a considerarse al momento de diseñar una página web es conocer
 la audicienca a la cuál va a estar dirigida. Antes de entrar al diseño, es necesario planificar
-lo que se va a realizar. Algunos de los aspectos que se deben tomar en consideración al momento de 
-diseñar una página web son los siguientes<a href="#1">[1]</a>:
+lo que se va a realizar <a href="#1">[1]</a>. Algunos de los aspectos que se deben tomar en consideración al momento de 
+diseñar una página web son los siguientes:
 - Los usuarios son escáneres  
 La gran mayoría de visitantes de una página web no leen todo su contenido. Por lo general, ellos
 la hojean durante unos pocos segundos para decidir si permanecen o se van. Por esto, es necesario
-poner información concisa en la página, con párrafos cortos.
+poner información concisa en la página, con párrafos cortos <a href="#1">[1]</a>.
 - Menos es más  
 Es aconsejable mantener los párrafos, páginas y capítulos lo más corto posibles. También, es 
 recomendable usar espacios, para evitar sobrecargar a la audiencia con exceso de texto o, en su 
-defecto, ubicar la informació en diferentes páginas.
+defecto, ubicar la informació en diferentes páginas <a href="#1">[1]</a>.
 - Navegación  
 Para facilidad de los usuarios, es necesario mantener la misma estructura en todas las páginas del 
-sitio web. También, se debe evitar el exceso de hipervínculos en cada párrrafo.
+sitio web. También, se debe evitar el exceso de hipervínculos en cada párrrafo <a href="#1">[1]</a>.
 - Rapidez de descarga  
 Se debe evitar que la página web tome mucho tiempo en cargar. Por lo general, los usuarios cambian 
 de página si no obtienen rápido los resultados que buscan. Se recomienda que la página cargue en 
-menos de 7 segundos.
+menos de 7 segundos <a href="#1">[1]</a>.
 - Permitirle hablar a la audiencia  
 Un aspecto que resulta atractivo para algunos usuarios es el poder dar a conocer sus comentarios
 y sugerencias a los creadores de una página web. De esta manera, es posible recibir una 
-retroalimentación acerca de que aspectos mejorar.
+retroalimentación acerca de que aspectos mejorar <a href="#1">[1]</a>.
 - La pantalla o monitor de los visitantes  
 No todos los usuarios tienen la misma resolución en sus monitores; por tanto, es necesario que 
 la página web que se está creando se vea bien en una amplia variedad de resoluciones. Puede resultar
 útil revisar algunas estadísticas sobre cuáles son las resoluciones más usadas en la actualidad.
 En la siguiente tabla, tenemos un ejemplo sobre estas estadísticas, las cuales fueron obtenidas 
 por W3schools, gracias a la información que ellos han recolectado de sus visitantes a lo largo 
-de varios años.
+de varios años <a href="#1">[1]</a>.
 
 Date|Otras altas|1920x1080|1366x768|1280x1024|1280x800|1024x768|800x600|Más bajas
 ---|---|---|---|---|---|---|---|---
@@ -86,7 +87,7 @@ visitan nuestra página web, para que esta pueda ser visualizada adecuadamente p
 usuarios. De uno navegador a otro, hay pequeñas diferencias en el código soportado; por 
 tanto, se requiere el desarrollador desarrolle páginas que puedan visualizarse en diferentes
 navegadores y versiones. La siguiente tabla muestra algunas de las estadísticas de los
-navegadores más usados por los usuarios.
+navegadores más usados por los usuarios <a href="#1">[1]</a>.
 
 Date|Chrome|IE|Firefox|Safari|Opera
 ---|---|---|---|---|---
@@ -98,27 +99,67 @@ Enero 2008||54.7%|36.4%|1.9%|1.4%
 - ¿Qué plugins los visitantes tienen?
 Es necesario considerar si los usuario de nuestra página tienen los plugins necesarios
 para acceder al contenido. De lo contrario, es posible que nuestra página no pueda ser 
-visualizada adecuadamente, causando molestias al usuario.
+visualizada adecuadamente, causando molestias al usuario <a href="#1">[1]</a>.
 - Acerca de las discapacidades
 Se debe tomar en consideración que nuestra página puede ser visitada por personas que
 tienen distintos tipos de discapacidades. Por lo tanto, es necesario desarrollar la 
 página bajo estándares de accesibilidad web. Un ejemplo, es el caso de las personas no videntes,
 quienes podrán acceder al contenido de nuestra página siempre y cuando programemos
-textos alternativos para imágenes u otros elementos visuales.
+textos alternativos para imágenes u otros elementos visuales <a href="#1">[1]</a>.
+<a href="#cabecera">A la cabecera</a>
+
+<a name="webquality"></a>
+### Web Quality
+Uno de los aspectos que se deben considerar para mejroar la calidad de un sitio web 
+es la implementación de los estándares web más actuales <a href="#2">[2]</a>. Algunas de estas 
+prácticas son:
+- Usar HTML5  
+Todas las páginas deben tener un el tag `<!DOCTYPE>` el cual definirá la versión de HTML que se 
+está usando. Conocer la versión del HTML facilita los procesos de validación <a href="#2">[2]</a>.
+- Usar archivos CSS separados  
+Al usar los archivos CSS en archivos separados se facilita la reescritura de las líneas de código
+cuando se quiere cambiar el estilo de la página web; ya que, de esta manera, solo con modificar un 
+único archivo podemos cambiar varias páginas a la vez. De lo contrario, si el CSS está dentro
+del código de la página, será necesario modificar las líneas de código de todas las páginas, lo cual 
+toma más tiempo <a href="#2">[2]</a>.
+- Validation WEB  
+El uso de un validador web permite saber si las páginas web de un sitio cumplen con los 
+estándares web seleccionados. Gracias a esto, es posible obtener una lista de errores
+que permitirá mejorar la página antes de que sea publicada <a href="#2">[2]</a>.
+- El elemento `<title>`  
+El tag `<title>` da una descripción breve sobre el contenido de una página al usuario. Al 
+usar un motor de búsqueda, este aparecerá en los resultados, lo cual permitirá que las 
+personas que esten interesadas en dicho tema den clic sobre dicho vínculo <a href="#2">[2]</a>.
+- Elementos de cabecera  
+El uso de cabeceras permite estructurar las páginas web de un sitio y facilitar su 
+indexación por los motores de búsqueda. Se puede recurrir a CSS para cambiar el estilo
+de dichas cabeceras si no son del gusto del desarrollador o del usuario <a href="#2">[2]</a>.
+- Conjuntos de caracteres  
+El uso del tag `<meta charset="">` permite que el navegador web pueda identificar la 
+codificación de caracteres que se está usando en un página web. En internet, se puede 
+encontrar una amplia variedad de formatos, por tanto, para que el usuario pueda
+visualizar correctamente la información disponible, es necesario usar dicho tag. La 
+gran mayoría de navegadores usan la codificación Unicode <a href="#2">[2]</a>.
+- Formatos de fechas  
+Es necesario usar un formato estandarizado para una página web, por ejemplo, lo
+establecido por la ISO. Si no se hace esto, se puede originar algunas ambigüedades y 
+el visitante de la página díficilmente podrá entender qué fecha es la que se está 
+mencionando <a href="#2">[2]</a>.
+
 <a href="#cabecera">A la cabecera</a>
 <a name="webwai"></a>
 ### Web WAI
- <a href="#2">[2]</a>. 
+ <a href="#3">[3]</a>. 
 
 <a href="#cabecera">A la cabecera</a>
 <a name="webvalidation"></a>
 ### Web Validation
- <a href="#3">[3]</a>.
+ <a href="#4">[4]</a>.
 
 <a href="#cabecera">A la cabecera</a>
 <a name="webseo"></a>
 ### Web SEO
- <a href="#4">[4]</a>.
+ <a href="#5">[5]</a>.
 
 <a href="#cabecera">A la cabecera</a>
 
