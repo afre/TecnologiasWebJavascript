@@ -10,31 +10,31 @@ var usuarios=[{
     id:2,
     nombre:'alex2',
     cedula:'99992'
-},
+},{
              id:3,
     nombre:'alex2',
-    cedula:'99993'];
+    cedula:'99993'}];
 
 app.get('/', function (req, res) {
   res.send('Hello World!');
 });
-/*
+
 app.get('/Usuario/:idUsuario', function (req, res) {
   var idActual = req.params.idUsuario;
     for(var i=0;i<usuarios.length;i++){
-        if(idActual===usuarios[i].id){
-            res.json(usuarios);
+        if(idActual==usuarios[i].id){
+            res.json(usuarios[i]);
         }
         
     }
-    
+    res.send('no existe');
 });
 
-app.get('/Usuario/:idUsuario', function (req, res) {
+app.get('/Usuario', function (req, res) {
   
-    res.json();
+    res.json(usuarios);
     
-});*/
+});
 
 app.get('/tecnologiasWebJavascript1', function (req, res) {
   res.send('get con javascript');
@@ -62,9 +62,9 @@ app.post('/tecnologiasWebJavascript1', function (req, res) {
     console.log('Lo que tengo en el response es');
     console.log(res);
     console.log('Cabecera req');
-    //console.log(req.headers);
+    console.log(req.headers);
     console.log('Cabecera res');
-    //console.log(res.headers);
+    console.log(res.headers);
     //res.json(usuario);
               //console.log("Cabeceras del response");
               //console.log("Cabeceras del response");
