@@ -32,7 +32,29 @@ app.get('/Usuario/:idUsuario', function (req, res) {
 
 app.get('/Usuario', function (req, res) {
   
+    console.log(req.query.nombre);
+    console.log(req.query.nombre);
+    
+    if(!req.query.nombre){
+        res.send('no envio el nombre');
+    }
+    if(!req.queyr.cedula){
+        res.send('no envio la cedula');
+    }
+    
+    var contador=0;
+    
+    var nuevoUsuario={
+        id:contador+1,
+                nombre:req.query.nombre,
+                  cedula:req.query.cedula};
+    usuarios.push(nuevoUsuario);
+    
+    //el put sirve para actualizar un registro
+    
+    contador=contador++;
     res.json(usuarios);
+    //res.json(usuarios);
     
 });
 
