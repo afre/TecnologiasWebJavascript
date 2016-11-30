@@ -18,18 +18,49 @@ var usuarios=[{
 app.get('/', function (req, res) {
   res.send('Hello World!');
 });
+/*
+app.get('/Usuario/:idUsuario', function (req, res) {
+  var idActual = req.params.idUsuario;
+    for(var i=0;i<usuarios.length;i++){
+        if(idActual===usuarios[i].id){
+            res.json(usuarios);
+        }
+        
+    }
+    
+});
+
+app.get('/Usuario/:idUsuario', function (req, res) {
+  
+    res.json();
+    
+});*/
 
 app.get('/tecnologiasWebJavascript1', function (req, res) {
   res.send('get con javascript');
 });
 
-app.post('/tecnologiasWebJavascript2', function (req, res) {
+app.post('/tecnologiasWebJavascript1', function (req, res) {
     //var parametro=req.params;
-  res.send('post con javascript');
-});
-
-app.listen(puerto, function () {
-  console.log('Example app listening on port'+puerto+'!');
+    var parametros=req.params;
+    var usuario={
+    id:1,
+    nombre:'alex',
+    cedula:'9999'
+};
+    usuario.apellido='';
+    usuario.mascota='';
+    usuario.casado=false;
+    
+    //    usuario = {
+//        nombre:usuario.nombre,
+//        cedula:usuario.cedula,
+//        apellido:''
+//    }
+    console.log('Lo que tengo en el request es');
+    console.log(req);
+    console.log('Lo que tengo en el response es');
+    console.log(res);
     console.log('Cabecera req');
     //console.log(req.headers);
     console.log('Cabecera res');
@@ -42,6 +73,13 @@ app.listen(puerto, function () {
     
     var usuario={nombre:'alex',
                 cedula:1766666666};
+    
+    
+  res.send('post con javascript');
+});
+
+app.listen(puerto, function () {
+  console.log('Example app listening on port'+puerto+'!');
     
 });
 
