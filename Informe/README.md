@@ -149,7 +149,18 @@ mencionando <a href="#2">[2]</a>.
 <a href="#cabecera">A la cabecera</a>
 <a name="webwai"></a>
 ### Web WAI
- <a href="#3">[3]</a>. 
+Son un conjunto de guías orientadas a la accesibilidad web con la finalidad de facilitar el acceso a la información disponible en internet a las personas con algún tipo de discapacidad. Para lograr esto, se puede recurrir a dispositivos manos libres, sonidos fuertes, diferentes contrastes y brillos de luces, entre otros aspectos <a href="#3">[3]</a>. En lo que respecto a la programación web, se tiene las siguientes alternativas:
+- Atributo `alt`  
+En el caso de que el usuario no pueda acceder a una imagen, el texto alternativo le dará una idea sobre su contenido.
+- No usar fuentes pequeñas  
+El usar un tamaño pequeño para las letras puede dificultar su lectura. Si una persona con mala visión intenta acceder a la página, este no podrá leerla.
+- Escoger los espacios entre letras y líneas  
+Un texto adecuadamente espaciado es fácil de leer. Si los caracteres se encuentran amontonados, una persona que tenga alguna discapacidad difícilmente podrá acceder a dicho contenido.
+- Evitar fuentes o tipos de letras poco tradicionales  
+El uso de itálicas u otros tipos de fuentes que cambien el estilo de los caracteres dificultan la lectura del texto disponible en una página web.
+- Evitar contrastes de color pobres  
+
+- Ajustar el color de fondo  
 
 <a href="#cabecera">A la cabecera</a>
 <a name="webvalidation"></a>
