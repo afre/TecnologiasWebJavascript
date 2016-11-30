@@ -1,22 +1,10 @@
-//tecnologiaswebfalex.imprimirSuma()
+var express = require('express');
+var app = express();
 
-module.exports = {
-    imprimirSuma: imprimirSuma,
- // customField: 'Custom Field',
-  //otherCustomField: 'This field is really cool'
-}
-/*
-tecnologiaswebfalex.imprimirSuma
+app.get('/', function (req, res) {
+  res.send('Hello World!');
+});
 
-module.exports = {
-    imprimirSuma: imprimirSuma(),
-  //customField: 'Custom Field',
-  //otherCustomField: 'This field is really cool'
-}
-*/
-function imprimirSuma(){
-var n1=1;
-n2=2;
-
-console.log(n1+n2);
-}
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!');
+});
