@@ -1,107 +1,106 @@
 var express = require('express');
-var app = express();
-var puerto=3030;
 
-var usuarios=[{
-    id:1,
-    nombre:'alex',
-    cedula:'9999'
-},{
-    id:2,
-    nombre:'alex2',
-    cedula:'99992'
-},{
-             id:3,
-    nombre:'alex2',
-    cedula:'99993'}];
+var app = express();
+
+var puerto = 6060;
+
+var usuarios = [
+    {
+        id:1,
+        nombre:'Pepe',
+        cedula:'123409182'
+    },
+    {
+        id:2,
+        nombre:'Carlos',
+        cedula:'981237918'
+    },
+    {
+        id:3,
+        nombre:'Juan',
+        cedula:'011283934'
+    }
+]
+var contador = 3
 
 app.get('/', function (req, res) {
-  res.send('Hello World!');
-});
+    res.send('Bienvenidos al Api de Usuarios!')
+})
 
-app.get('/Usuario/:idUsuario', function (req, res) {
-  var idActual = req.params.idUsuario;
-    for(var i=0;i<usuarios.length;i++){
-        if(idActual==usuarios[i].id){
-            res.json(usuarios[i]);
-        }
-        
-    }
-    res.send('no existe');
-});
 
 app.get('/Usuario', function (req, res) {
-  
+
+    res.json(usuarios);
+    
+})
+
+
+app.get('/Usuario/:idUsuario', function (req, res) {
+    
+    var idActual = req.params.idUsuario;
+    
+    for(var i=0;i<usuarios.length;i++){
+        //Buscamos en todo el arreglo de Usuarios
+        if(idActual == usuarios[i].id){
+            //respondemos al usuario con idActual
+            res.json(usuarios[i]);
+        }
+    }
+       
+    //Si no lo encuentra responda que no existe
+    res.send('No existe el Usuario');
+    
+})
+
+
+app.post('/Usuario', function (req, res) {
+    
+    
     console.log(req.query.nombre);
-    console.log(req.query.nombre);
+    
+    console.log(req.query.cedula);
     
     if(!req.query.nombre){
-        res.send('no envio el nombre');
-    }
-    if(!req.queyr.cedula){
-        res.send('no envio la cedula');
+        res.send('No envio el nombre');
     }
     
-    var contador=0;
+    if(!req.query.cedula){
+        res.send('No envio la cedula');
+    }
     
-    var nuevoUsuario={
+    var nuevoUsuario = {
         id:contador+1,
-                nombre:req.query.nombre,
-                  cedula:req.query.cedula};
+        nombre:req.query.nombre,
+        cedula:req.query.cedula
+    }
     usuarios.push(nuevoUsuario);
-    
-    //el put sirve para actualizar un registro
-    
-    contador=contador++;
-    res.json(usuarios);
-    //res.json(usuarios);
-    
-});
+    contador = contador+1;
+    res.json(nuevoUsuario)
 
-app.get('/tecnologiasWebJavascript1', function (req, res) {
-  res.send('get con javascript');
-});
+//    //Deprecated
+//    console.log(req.param('nombre'));
+//    
+//    //Busca el parametro nombre
+//    console.log(req.query.nombre);
+//    
+//    //Parametros URL
+//    //console.log(req.params);
+//
+//    res.json(usuarios);
+    
+})
 
-app.post('/tecnologiasWebJavascript1', function (req, res) {
-    //var parametro=req.params;
-    var parametros=req.params;
-    var usuario={
-    id:1,
-    nombre:'alex',
-    cedula:'9999'
-};
-    usuario.apellido='';
-    usuario.mascota='';
-    usuario.casado=false;
-    
-    //    usuario = {
-//        nombre:usuario.nombre,
-//        cedula:usuario.cedula,
-//        apellido:''
-//    }
-    console.log('Lo que tengo en el request es');
-    console.log(req);
-    console.log('Lo que tengo en el response es');
-    console.log(res);
-    console.log('Cabecera req');
-    console.log(req.headers);
-    console.log('Cabecera res');
-    console.log(res.headers);
-    //res.json(usuario);
-              //console.log("Cabeceras del response");
-              //console.log("Cabeceras del response");
-//aumentar campos en un objeto json
-    //usuario.apellido='';
-    
-    var usuario={nombre:'alex',
-                cedula:1766666666};
-    
-    
-  res.send('post con javascript');
-});
+app.put('/Usuario/:idUsuario', function (req, res) {
+    //implementacion
+    //El Usuario Actualizado
+})
+
+app.delete('/Usuario/:idUsuario', function (req, res) {
+    //implementacion
+    //El Usuario Borrado
+})
+
 
 app.listen(puerto, function () {
-  console.log('Example app listening on port'+puerto+'!');
-    
-});
-
+    console.log('Example app listening on port ' + puerto + '!')
+})
