@@ -80,14 +80,15 @@ documento.
 
 ### Instalación de Expressjs
 Se utilizó el framework de Expressjs para la configuración de un servidor web.
-![express](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/express1.png?raw=true)
-![express](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/express2.png?raw=true)
+![express](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/express1.png?raw=true)
+![express](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/express2.png?raw=true)
 
 ### Configuración de paquetes npm
 Se utilizó el administrador de paquetes de Node.js para la publicación de paquetes en internet.
-![nodejs](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/nodejs1.jpg?raw=true)
-![nodejs](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/nodejs2.jpg?raw=true)
-![nodejs](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/nodejs3.jpg?raw=true)
+![npm](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/npm1.png?raw=true)
+![npm](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/npm2.png?raw=true)
+![npm](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/npm3.png?raw=true)
+![npm](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/npm4.png?raw=true)
 
 ### Direccionamiento básico
 Se utilizarón los métodos GET, POST y PUT para el envió de mensajes al servidor.
