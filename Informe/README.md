@@ -91,10 +91,16 @@ Se utilizó el administrador de paquetes de Node.js para la publicación de paqu
 ![npm](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/npm4.png?raw=true)
 
 ### Direccionamiento básico
-Se utilizarón los métodos GET, POST y PUT para el envió de mensajes al servidor.
-![nodejs](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/nodejs1.jpg?raw=true)
-![nodejs](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/nodejs2.jpg?raw=true)
-![nodejs](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/nodejs3.jpg?raw=true)
+Se utilizarón los métodos http para el envió de mensajes al servidor.
+![routing](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/routing1.png?raw=true)
+![routing](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/routing2.png?raw=true)
+![routing](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/routing3.png?raw=true)
+![routing](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/routing4.png?raw=true)
+![routing](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/routing5.png?raw=true)
+![routing](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/routing6.png?raw=true)
+![routing](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/routing7.png?raw=true)
+![routing](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/routing8.png?raw=true)
+![routing](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/routing9.png?raw=true)
 
 <a href="#cabecera">A la cabecera</a>
 
@@ -102,6 +108,9 @@ Se utilizarón los métodos GET, POST y PUT para el envió de mensajes al servid
 ## Conclusiones y Recomendaciones
 
 - Se recomienda el uso de ExpressJS para simplifcar el trabajo de programación en Javascript y Node.js, a través del uso de funciones ya definidos en el framework.
+- Es necesario la creación de una cuenta de usuario en la página de npm para poder publicar paquetes propios.
+- Por medio del método get, es posible enviar parámetros al servidor por medio de la url.
+- No se recomienda el uso del método get para envió de información sensible; puesto que, esta puede ser facilmente interceptada por una atacante.
 
 <a href="#cabecera">A la cabecera</a>
 
