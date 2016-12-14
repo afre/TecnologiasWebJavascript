@@ -61,7 +61,7 @@ app.METHOD(PATH, HANDLER)
 ```
 donde `app` es una instancia de express, `METHOD` es un método de solicitud HTTP, `PATH` 
 es una vía de acceso al servidor y `HANDLER` es una función que se ejecuta cuando se 
-correlaciona la ruta <a href="#4">[4]</a>.. 
+correlaciona la ruta <a href="#4">[4]</a>. 
 Algunos de los conjuntos de métodos comunes para HTTP/1.1 son:  
 - GET. Solicita los datos desde un recurso específico. 
 - POST. Solicita que el servidor acepte a la entidad encerrada en la solicitud como un 
@@ -78,17 +78,19 @@ documento.
 <a name="desarrollo"></a>
 ## Desarrollo del informe
 
-### Postman
-Se utilizó el plugin de Postman para visualizar las diferencias entre el método Post y Get.
-![Postaman](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/postman1.jpg?raw=true)
-![Postaman](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/postman2.jpg?raw=true)
-![Postaman](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/postman3.jpg?raw=true)
-![Postaman](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/postman4.jpg?raw=true)
-![Postaman](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/postman5.jpg?raw=true)
-![Postaman](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/postman6.jpg?raw=true)
+### Instalación de Expressjs
+Se utilizó el framework de Expressjs para la configuración de un servidor web.
+![express](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/express1.png?raw=true)
+![express](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/express2.png?raw=true)
 
-### Configurar un servidor en windows
-Se utilizó la herramienta de Node.js para la configuración del servidor.
+### Configuración de paquetes npm
+Se utilizó el administrador de paquetes de Node.js para la publicación de paquetes en internet.
+![nodejs](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/nodejs1.jpg?raw=true)
+![nodejs](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/nodejs2.jpg?raw=true)
+![nodejs](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/nodejs3.jpg?raw=true)
+
+### Direccionamiento básico
+Se utilizarón los métodos GET, POST y PUT para el envió de mensajes al servidor.
 ![nodejs](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/nodejs1.jpg?raw=true)
 ![nodejs](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/nodejs2.jpg?raw=true)
 ![nodejs](https://github.com/afre/TecnologiasWebJavascript/blob/01-html/Informe/Imagenes/nodejs3.jpg?raw=true)
