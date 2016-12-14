@@ -54,6 +54,14 @@ Mapeos Objeto-Relacional (ORM) específicos al usuario <a href="#3">[3]</a>.
 <a href="#cabecera">A la cabecera</a>
 <a name="html"></a>
 ### Métodos de petición en ExpressJS
+El direccionamiento se refiere a como debe responder una determinada aplicación a una 
+solicitud del cliente. La definición de la ruta tiene la siguiente estructura:
+```javascript
+app.METHOD(PATH, HANDLER)
+```
+donde `app` es una instancia de express, `METHOD` es un método de solicitud HTTP, `PATH` 
+es una vía de acceso al servidor y `HANDLER` es una función que se ejecuta cuando se 
+correlaciona la ruta <a href="#4">[4]</a>.. 
 Algunos de los conjuntos de métodos comunes para HTTP/1.1 son:  
 - GET. Solicita los datos desde un recurso específico. 
 - POST. Solicita que el servidor acepte a la entidad encerrada en la solicitud como un 
@@ -102,5 +110,8 @@ Se utilizó la herramienta de Node.js para la configuración del servidor.
 [Online]. Available: https://expressjs.com/</a>  
 <a name="3">[3] Node.js Foundation. (2016). Express [Online]. Available: 
 https://github.com/expressjs/express</a>  
+<a name="4">[4] Node.js Foundation. (2016). Direccionamiento básico [Online]. Available: 
+http://expressjs.com/es/starter/basic-routing.html</a>  
+<a name="5">[5] Refnes Data. (2016). HTTP Methods: GET vs. POST [Online]. Available: http://www.w3schools.com/TAGS/ref_httpmethods.asp</a>  
 
 <a href="#cabecera">A la cabecera</a>
