@@ -23,3 +23,8 @@ las opciones son:
 
 ## servidor web sails.js
 El servidor se encuentra en la carpeta "assests"
+
+## Generar controladores
+```
+sails generate controller Nombrecontrolador
+```
