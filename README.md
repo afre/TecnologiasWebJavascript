@@ -38,3 +38,22 @@ la api fusiona un controlador y un modelo.
 ```
 sails generate model Nombremodelo
 ```
+## Api rest
+
+Crear
+URL:
+```
+http://localhost:1337/Usuario
+```
+Método Http
+```
+POST
+```
+
+Datos:
+```javascript
+//json
+{nombre:'alex',
+apellido:'f',
+correo:'...@hotmail.com'}
+```
