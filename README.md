@@ -28,3 +28,13 @@ El servidor se encuentra en la carpeta "assests"
 ```
 sails generate controller Nombrecontrolador
 ```
+## Generar api
+```
+sails generate api Nombreapi
+```
+la api fusiona un controlador y un modelo.
+
+## Generar modelo
+```
+sails generate model Nombremodelo
+```
