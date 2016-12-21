@@ -7,7 +7,7 @@
 
 module.exports = {
 
-  attributes: {
+  attributes:{
 nombre:{
     type:'string',
     minLength:5
