@@ -14,9 +14,16 @@ module.exports = {
         if(req.method=="POST"){
          var parametros=req.allParams();
             if(parametros.nombre && parametros.apellidos){
-  if(parametros.correo==""){
-      parametros.correo=null;
+  var usuarioCrear={
+      nombres:parametros.nombres,
+      apellidos:parametros.apellidos,
+      correo:parametros.correo
   }
+                
+                if(usuarioCrear.correo==""){
+                    delete usuarioCrear.correo
+                }
+                
                 Usuario.create({
       nombres:parametros.nombres,
       apellidos:parametros.apellidos,
@@ -32,7 +39,7 @@ module.exports = {
             }
         });
                     }
-                    
+                    return res.view("vistas/Usuario/crearUsuario");
                 })
             }else{
                                                   return res.view('vistas/Error',{
