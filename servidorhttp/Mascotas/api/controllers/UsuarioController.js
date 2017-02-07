@@ -14,13 +14,34 @@ module.exports = {
         if(req.method=="POST"){
          var parametros=req.allParams();
             if(parametros.nombre && parametros.apellidos){
-                                  return res.view('vistas/Error',{
+  if(parametros.correo==""){
+      parametros.correo=null;
+  }
+                Usuario.create({
+      nombres:parametros.nombres,
+      apellidos:parametros.apellidos,
+      correo:parametros.correo
+  }).exec(function(err, usuarioCreado){
+                    
+                    if(err){
+                                            return res.view('vistas/Error',{
             error:{
                 descripcion:"Usted está por error en esta ruta, diríjase a Inicio",
+                rawErrow:err,
+                url:"/CrearUsuario"
+            }
+        });
+                    }
+                    
+                })
+            }else{
+                                                  return res.view('vistas/Error',{
+            error:{
+                descripcion:"Llena todos los parametros apellidos y nombres",
                 rawErrow:"Ruta equivocada",
                 url:"/CrearUsuario"
             }
-        });  
+        });
             }
             
         }
