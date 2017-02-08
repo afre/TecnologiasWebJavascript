@@ -22,8 +22,27 @@ module.exports = {
                 url:"/Inicio"
             }
         });
+    },
+      listarUsuarios:function(req,res){
+     Usuario.find().exec(function(err,usuariosEncontrados){
+         if(err){
+             res.view('vistas/Error',{
+            error:{
+                desripcion:"Hay un error en la carga de los usuarios",
+                rawError:errorIndefinido,
+                url:"/ListarUsuarios"
+            }
+        });
+         }
+         
+            
+             res.view('vistas/Usuario/ListarUsuarios',{
+                 usuarios:usuariosEncontrados
+        }); 
+         
+     })
+          //return res.view('vistas/Usuario/listarUsuarios');
     }
-    
 };
 
 
