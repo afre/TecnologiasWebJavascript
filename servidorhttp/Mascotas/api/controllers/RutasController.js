@@ -25,7 +25,7 @@ module.exports = {
     },
       listarUsuarios:function(req,res){
      Usuario.find().exec(function(err,usuariosEncontrados){
-         if(err){
+         if(errorIndefinido){
              res.view('vistas/Error',{
             error:{
                 desripcion:"Hay un error en la carga de los usuarios",

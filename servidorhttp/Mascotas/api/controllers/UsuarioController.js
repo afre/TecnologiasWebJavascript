@@ -39,6 +39,24 @@ module.exports = {
 
                         });
                     }
+                    
+                         Usuario.find().exec(function(err,usuariosEncontrados){
+         if(errorIndefinido){
+             res.view('vistas/Error',{
+            error:{
+                desripcion:"Hay un error en la carga de los usuarios",
+                rawError:errorIndefinido,
+                url:"/ListarUsuarios"
+            }
+        });
+         }
+         
+            
+             res.view('vistas/Usuario/ListarUsuarios',{
+                 usuarios:usuariosEncontrados
+        }); 
+         
+     })
 
                     return res.view('vistas/Usuario/crearUsuario');
 
