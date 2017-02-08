@@ -90,5 +90,108 @@ module.exports = {
 
         }
 
+    },
+    BorrarUsuario:function(req,res){
+        var parametros=req.allParams();
+        
+        if(parametros.id){
+           Usuario.destroy({
+               id:parametros.id
+           }) .exec(function(errorInesperado,UsuarioRemovido){
+               
+               if(errorInesperado){
+                   
+                                       return res.view('vistas/Error',{
+            error:{
+                desripcion:"hay un error inesperado",
+                rawError:errorInesperado,
+                url:"/ListarUsuarios"
+            }
+        });
+               }
+               
+                    Usuario.find().exec(function(errorIndefinido,usuariosEncontrados){
+         if(errorIndefinido){
+             res.view('vistas/Error',{
+            error:{
+                desripcion:"Hay un error en la carga de los usuarios",
+                rawError:errorIndefinido,
+                url:"/ListarUsuarios"
+            }
+        });
+         }
+         
+            
+             res.view('vistas/Usuario/ListarUsuarios',{
+                 usuarios:usuariosEncontrados
+        }); 
+         
+     })
+               
+           })
+        }else{
+                                                   return res.view('vistas/Error',{
+            error:{
+                desripcion:"Necesitamos el ID",
+                rawError:"No envia ID",
+                url:"/ListarUsuarios"
+            }
+        });
+        }
+    },
+    editarUsuario:function(req,res){
+         var parametros=req.allParams();
+        
+        if(parametros.id&&(parametros.nombres||parametros.apellidos||parametros.correo)){
+            
+            var usuarioAEditar={
+                nombre:parametros.nombres,
+                apellidos:parametros.apellidos,
+                correo:parametros.correo
+            }
+            
+           Usuario.destroy({
+               id:parametros.id
+           }) .exec(function(errorInesperado,UsuarioRemovido){
+               
+               if(errorInesperado){
+                   
+                                       return res.view('vistas/Error',{
+            error:{
+                desripcion:"hay un error inesperado",
+                rawError:errorInesperado,
+                url:"/ListarUsuarios"
+            }
+        });
+               }
+               
+                    Usuario.find().exec(function(errorIndefinido,usuariosEncontrados){
+         if(errorIndefinido){
+             res.view('vistas/Error',{
+            error:{
+                desripcion:"Hay un error en la carga de los usuarios",
+                rawError:errorIndefinido,
+                url:"/ListarUsuarios"
+            }
+        });
+         }
+         
+            
+             res.view('vistas/Usuario/ListarUsuarios',{
+                 usuarios:usuariosEncontrados
+        }); 
+         
+     })
+               
+           })
+        }else{
+                                                   return res.view('vistas/Error',{
+            error:{
+                desripcion:"Necesitamos el ID, el nombre, el apellido o el correo",
+                rawError:"No envia parametros",
+                url:"/EditarUsuarios"
+            }
+        });
+        }       
     }
 };

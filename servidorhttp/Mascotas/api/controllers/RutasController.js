@@ -24,7 +24,7 @@ module.exports = {
         });
     },
       listarUsuarios:function(req,res){
-     Usuario.find().exec(function(err,usuariosEncontrados){
+     Usuario.find().exec(function(errorIndefinido,usuariosEncontrados){
          if(errorIndefinido){
              res.view('vistas/Error',{
             error:{
