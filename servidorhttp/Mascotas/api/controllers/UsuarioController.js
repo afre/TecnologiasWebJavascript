@@ -145,14 +145,26 @@ module.exports = {
         if(parametros.id&&(parametros.nombres||parametros.apellidos||parametros.correo)){
             
             var usuarioAEditar={
-                nombre:parametros.nombres,
+                nombres:parametros.nombres,
                 apellidos:parametros.apellidos,
                 correo:parametros.correo
             }
             
-           Usuario.destroy({
+            if(usuarioAEditar.nombres==]""){
+                delete usuarioAEditar.nombres
+            }
+            if(usuarioAEditar.apellidos==]""){
+                delete usuarioAEditar.apellidos
+            }
+            if(usuarioAEditar.correo==]""){
+                delete usuarioAEditar.correo
+            }
+            
+            
+            
+           Usuario.update({
                id:parametros.id
-           }) .exec(function(errorInesperado,UsuarioRemovido){
+           },usuarioAEditar) .exec(function(errorInesperado,UsuarioRemovido){
                
                if(errorInesperado){
                    
