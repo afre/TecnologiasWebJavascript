@@ -39,27 +39,24 @@ module.exports = {
 
                         });
                     }
-                    
-                         Usuario.find().exec(function(err,usuariosEncontrados){
-         if(errorIndefinido){
-             res.view('vistas/Error',{
-            error:{
-                desripcion:"Hay un error en la carga de los usuarios",
-                rawError:errorIndefinido,
-                url:"/ListarUsuarios"
-            }
-        });
-         }
-         
-            
-             res.view('vistas/Usuario/ListarUsuarios',{
-                 usuarios:usuariosEncontrados
-        }); 
-         
-     })
 
-                    return res.view('vistas/Usuario/crearUsuario');
+                    Usuario.find()
+                        .exec(function (errorIndefinido, usuariosEncontrados) {
 
+                            if (errorIndefinido) {
+                                res.view('vistas/Error', {
+                                    error: {
+                                        desripcion: "Hubo un problema cargando los Usuarios",
+                                        rawError: errorIndefinido,
+                                        url: "/ListarUsuarios"
+                                    }
+                                });
+                            }
+
+                            res.view('vistas/Usuario/ListarUsuarios', {
+                                usuarios: usuariosEncontrados
+                            });
+                        })
 
                 })
 
@@ -91,119 +88,122 @@ module.exports = {
         }
 
     },
-    BorrarUsuario:function(req,res){
-        var parametros=req.allParams();
-        
-        if(parametros.id){
-           Usuario.destroy({
-               id:parametros.id
-           }) .exec(function(errorInesperado,UsuarioRemovido){
-               
-               if(errorInesperado){
-                   
-                                       return res.view('vistas/Error',{
-            error:{
-                desripcion:"hay un error inesperado",
-                rawError:errorInesperado,
-                url:"/ListarUsuarios"
-            }
-        });
-               }
-               
-                    Usuario.find().exec(function(errorIndefinido,usuariosEncontrados){
-         if(errorIndefinido){
-             res.view('vistas/Error',{
-            error:{
-                desripcion:"Hay un error en la carga de los usuarios",
-                rawError:errorIndefinido,
-                url:"/ListarUsuarios"
-            }
-        });
-         }
-         
-            
-             res.view('vistas/Usuario/ListarUsuarios',{
-                 usuarios:usuariosEncontrados
-        }); 
-         
-     })
-               
-           })
-        }else{
-                                                   return res.view('vistas/Error',{
-            error:{
-                desripcion:"Necesitamos el ID",
-                rawError:"No envia ID",
-                url:"/ListarUsuarios"
-            }
-        });
+    BorrarUsuario: function (req, res) {
+
+        var parametros = req.allParams();
+
+        if (parametros.id) {
+
+            Usuario.destroy({
+                id: parametros.id
+            }).exec(function (errorInesperado, UsuarioRemovido) {
+                if (errorInesperado) {
+                    return res.view('vistas/Error', {
+                        error: {
+                            desripcion: "Tuvimos un Error Inesperado",
+                            rawError: errorInesperado,
+                            url: "/ListarUsuarios"
+                        }
+                    });
+                }
+                Usuario.find()
+                    .exec(function (errorIndefinido, usuariosEncontrados) {
+
+                        if (errorIndefinido) {
+                            res.view('vistas/Error', {
+                                error: {
+                                    desripcion: "Hubo un problema cargando los Usuarios",
+                                    rawError: errorIndefinido,
+                                    url: "/ListarUsuarios"
+                                }
+                            });
+                        }
+
+                        res.view('vistas/Usuario/ListarUsuarios', {
+                            usuarios: usuariosEncontrados
+                        });
+                    })
+            })
+
+        } else {
+            return res.view('vistas/Error', {
+                error: {
+                    desripcion: "Necesitamos el ID para borrar al Usuario",
+                    rawError: "No envia ID",
+                    url: "/ListarUsuarios"
+                }
+            });
         }
     },
-    editarUsuario:function(req,res){
-         var parametros=req.allParams();
-        
-        if(parametros.id&&(parametros.nombres||parametros.apellidos||parametros.correo)){
-            
-            var usuarioAEditar={
-                nombres:parametros.nombres,
-                apellidos:parametros.apellidos,
-                correo:parametros.correo
+    editarUsuario: function (req, res) {
+
+        var parametros = req.allParams();
+
+        if (parametros.idUsuario && (parametros.nombres || parametros.apellidos || parametros.correo)) {
+
+
+
+            var usuarioAEditar = {
+                nombres: parametros.nombres,
+                apellidos: parametros.apellidos,
+                correo: parametros.correo
             }
-            
-            if(usuarioAEditar.nombres==]""){
+
+            if (usuarioAEditar.nombres == "") {
                 delete usuarioAEditar.nombres
             }
-            if(usuarioAEditar.apellidos==]""){
+            if (usuarioAEditar.apellidos == "") {
                 delete usuarioAEditar.apellidos
             }
-            if(usuarioAEditar.correo==]""){
+            if (usuarioAEditar.correo == "") {
                 delete usuarioAEditar.correo
             }
-            
-            
-            
-           Usuario.update({
-               id:parametros.id
-           },usuarioAEditar) .exec(function(errorInesperado,UsuarioRemovido){
-               
-               if(errorInesperado){
-                   
-                                       return res.view('vistas/Error',{
-            error:{
-                desripcion:"hay un error inesperado",
-                rawError:errorInesperado,
-                url:"/ListarUsuarios"
-            }
-        });
-               }
-               
-                    Usuario.find().exec(function(errorIndefinido,usuariosEncontrados){
-         if(errorIndefinido){
-             res.view('vistas/Error',{
-            error:{
-                desripcion:"Hay un error en la carga de los usuarios",
-                rawError:errorIndefinido,
-                url:"/ListarUsuarios"
-            }
-        });
-         }
-         
-            
-             res.view('vistas/Usuario/ListarUsuarios',{
-                 usuarios:usuariosEncontrados
-        }); 
-         
-     })
-               
-           })
-        }else{
-                                                   return res.view('vistas/Error',{
-            error:{
-                desripcion:"Necesitamos el ID, el nombre, el apellido o el correo",
-                rawError:"No envia parametros",
-                url:"/EditarUsuarios"
-            }
-        });
-        }       
+
+            Usuario.update({
+                    id: parametros.idUsuario
+                }, usuarioAEditar)
+                .exec(function (errorInesperado, UsuarioRemovido) {
+                    if (errorInesperado) {
+                        return res.view('vistas/Error', {
+                            error: {
+                                desripcion: "Tuvimos un Error Inesperado",
+                                rawError: errorInesperado,
+                                url: "/ListarUsuarios"
+                            }
+                        });
+                    }
+                    Usuario.find()
+                        .exec(function (errorIndefinido, usuariosEncontrados) {
+
+                            if (errorIndefinido) {
+                                res.view('vistas/Error', {
+                                    error: {
+                                        desripcion: "Hubo un problema cargando los Usuarios",
+                                        rawError: errorIndefinido,
+                                        url: "/ListarUsuarios"
+                                    }
+                                });
+                            }
+
+                            res.view('vistas/Usuario/ListarUsuarios', {
+                                usuarios: usuariosEncontrados
+                            });
+                        })
+                })
+
+        } else {
+            return res.view('vistas/Error', {
+                error: {
+                    desripcion: "Necesitamos que envies el ID y el nombre, apellido o correo",
+                    rawError: "No envia Parametros",
+                    url: "/ListarUsuarios"
+                }
+            });
+        }
+
+
+
     }
+
+
 };

@@ -22,7 +22,7 @@ module.exports = {
 
 
         
-        var parametros = req.allParams()
+        var parametros = req.allParams();
 
         if (req.method == 'GET') {
             

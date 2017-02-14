@@ -22,9 +22,19 @@ module.exports = {
           type:'string',
           email:true,
           defaultsTo:'correo@invalido.com'
+      },
+      password:{
+          type:'string',
+          defaultTo:"123456"
       }
-  }
-    
+  },
+    beforeCreate:function(values,cb){
+           sails.log.info(values);
+/*    cb(123123123);
+    cb()*/
+        //cb("hola");
+    }
+ 
 };
 
 
