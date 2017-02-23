@@ -1,3 +1,11 @@
 <h1>
   {{title}}
+
 </h1>
+<form (ngSubmit)="crearTienda(NuevaTiendaForm)" #NuevaTiendaForm="ngForm">
+<div class="form-group">
+  <label>Tienda</label>
+  <input type="text" class="form-control" placeholder="Digite un nombre de tienda" name="nombre" [(ngModel)]="nuevaTienda.nombre">
+  <button type="submit" class="btn btn-block btn-success">Crear</button>
+</div>
+</form>

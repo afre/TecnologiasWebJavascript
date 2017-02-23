@@ -4,7 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-
+@Decorator({asd:"asd"})
+@Primary({})
+@Politecnica({})
 @NgModule({
   declarations: [
     AppComponent
