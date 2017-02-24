@@ -1,5 +1,6 @@
 import {Component, OnInit} from "@angular/core";
 import {Response, Http} from "@angular/http";
+import {MasterURLService} from "./services/master-url.service";
 
 @Component({
   selector: 'app-root',
@@ -14,12 +15,13 @@ export class AppComponent implements OnInit {
   colorH4 = "red";
   tamanoH4 = "52px";
   classes = "btn btn-block btn-success";
+  error: string = "no hay";
+  nuevaTienda: any = {};
 
-  nuevaTienda:any={};
 
+  constructor(private _http: Http,
+              private _masterURL: MasterURLService) {
 
-
-  constructor(private http: Http) {
     this.apellido = "F";
     this.nombre = "Alex";
     console.log("Inicio el construcor")
@@ -45,16 +47,30 @@ export class AppComponent implements OnInit {
   }
 
 
-  crearTienda(formulario){
+  crearTienda(formulario) {
     console.log(formulario);
-    this.http
-      .post("http://localhost:1337/Tienda", formulario.valores)
-      .subscribe(
-        res=>console.log('Respuesta: ',res),
-        err=>console.log('Error: ',err),
-        ()=>{
-          console.log("Se completo la accion")
-        }
-      );
+
+    this._http.post(this._masterURL.url + "Tienda", {
+      nombre: formulario.value.nombre
+    })
+      .subscribe((res) => {
+          console.log("No hubo errores");
+          console.log(res);
+          this.nuevaTienda = {};
+        },
+        (err) => {
+          console.log("Ocurrio un error", err);
+        },
+        () => {
+          console.log("Termino la funcion");
+        });
+    /*      .post("http://localhost:1337/Tienda", formulario.valores)
+     .subscribe(
+     res=>console.log('Respuesta: ',res),
+     err=>console.log('Error: ',err),
+     ()=>{
+     console.log("Se completo la accion")
+     }
+     );*/
   }
 }
