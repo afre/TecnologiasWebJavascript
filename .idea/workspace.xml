@@ -20,8 +20,8 @@
       <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            <state relative-caret-position="444">
+              <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
               </folding>
@@ -42,7 +42,7 @@
       <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="926">
+            <state relative-caret-position="630">
               <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
@@ -61,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="32" />
+            <state relative-caret-position="259">
+              <caret line="4" column="49" lean-forward="true" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -74,19 +74,24 @@
       <file leaf-file-name="Tienda.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyProject/Tiendas/api/models/Tienda.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-              <folding />
+            <state relative-caret-position="38">
+              <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+              <folding>
+                <marker date="1487971074034" expanded="true" signature="235:315" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Producto.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Producto.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyProject/Tiendas/api/models/Producto.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="333">
               <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="8" />
-              <folding />
+              <folding>
+                <marker date="1487971064172" expanded="true" signature="237:291" ph="{...}" />
+                <marker date="1487971064172" expanded="true" signature="254:289" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/tienda/tienda.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="111">
-              <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+              <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
               <folding>
                 <element signature="n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
@@ -112,7 +117,7 @@
       <file leaf-file-name="tienda.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/tienda/tienda.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
+            <state relative-caret-position="-574">
               <caret line="104" column="8" lean-forward="false" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
@@ -126,8 +131,8 @@
       <file leaf-file-name="app.routes.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/app.routes.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+            <state relative-caret-position="91">
+              <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="29" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -149,11 +154,11 @@
         <option value="$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/tienda/tienda.component.html" />
         <option value="$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/tienda/tienda.component.ts" />
-        <option value="$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/app.routes.ts" />
         <option value="$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/app.component.ts" />
-        <option value="$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/MyProject/Tiendas/api/models/Producto.js" />
         <option value="$PROJECT_DIR$/MyProject/Tiendas/api/models/Tienda.js" />
+        <option value="$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/app.routes.ts" />
+        <option value="$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/app.component.html" />
       </list>
     </option>
   </component>
@@ -214,8 +219,22 @@
               <option name="myItemId" value="MyProject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Tiendas" />
+              <option name="myItemId" value="TecnologiasWebJavascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TecnologiasWebJavascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AplicacionPrueba" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -233,37 +252,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Tiendas" />
+              <option name="myItemId" value="AplicacionPrueba" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TecnologiasWebJavascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TecnologiasWebJavascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tiendas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -278,6 +271,18 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="MyProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AplicacionPrueba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -370,15 +375,15 @@
       <option name="presentableId" value="Default" />
       <updated>1487882327758</updated>
       <workItem from="1487882329097" duration="8689000" />
-      <workItem from="1487946833321" duration="19482000" />
+      <workItem from="1487946833321" duration="19841000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28171000" />
+    <option name="totallyTimeSpent" value="28530000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="800" y="0" width="800" height="860" extended-state="0" />
+    <frame x="800" y="0" width="800" height="860" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -445,20 +450,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/tienda/tienda.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
-          <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
           <folding>
             <element signature="n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
@@ -473,7 +468,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/tienda/tienda.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
+        <state relative-caret-position="-574">
           <caret line="104" column="8" lean-forward="false" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
@@ -483,19 +478,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/app.routes.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="926">
+        <state relative-caret-position="630">
           <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
@@ -503,19 +488,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyProject/Tiendas/api/models/Tienda.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="38">
+          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding>
+            <marker date="1487971074034" expanded="true" signature="235:315" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -523,6 +502,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
           <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="8" />
+          <folding>
+            <marker date="1487971064172" expanded="true" signature="237:291" ph="{...}" />
+            <marker date="1487971064172" expanded="true" signature="254:289" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/app.routes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="4" column="49" lean-forward="true" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
           <folding />
         </state>
       </provider>
