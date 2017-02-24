@@ -94,4 +94,22 @@ this.disabledButtons.NuevaTiendaFormSubmitButton=true;
      }
      );*/
   }
+
+  borrarTienda(id:number){
+
+    this._http.delete(this._masterURL.url+"Tienda/"+id)
+      .subscribe(
+        (res) => {
+          let tiendaBorrada=res.json();
+          this.tiendas=this.tiendas.filter(
+            value=>tiendaBorrada.id!=value.id
+          );
+
+        },
+        (err) => {
+
+          console.log("Ocurrio un error", err);
+        }
+      )
+  }
 }
