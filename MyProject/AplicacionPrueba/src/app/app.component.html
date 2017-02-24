@@ -44,12 +44,27 @@
   </div>
   <div class="row">
     <div class="col-sm-12 animated flipInX" *ngFor="let tienda of tiendas">
+      <div>
       <h3>{{tienda.nombre}}</h3>
       <p>ID: {{tienda.id}}</p>
-      <button class="btn btn-block btn-danger"
-      (click)="borrarTienda(tienda.id)">Borrar</button>
+      </div>
+      <div class="row">
 
-        <form class="animated bounceIn" (ngSubmit)="crearTienda(NuevaTiendaForm)" #NuevaTiendaForm="ngForm">
+        <div class="col-sm-5">
+          <button class="btn btn-block btn-info"
+                  (click)="actualizarTienda(tienda)">Actualizar</button>
+
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-5">
+          <button class="btn btn-block btn-danger"
+                  (click)="borrarTienda(tienda.id)">Borrar</button>
+        </div>
+      </div>
+      <!--<button class="btn btn-block btn-danger"
+      (click)="borrarTienda(tienda.id)">Borrar</button>-->
+      <form action="">
+        <form class="animated bounceIn" (ngSubmit)="actualizarTienda(tienda)" #NuevaTiendaForm="ngForm">
           <div class="form-group">
 
             <label>Tienda</label>
@@ -67,9 +82,9 @@
                    #nombre="ngModel"
                    #nombreElm>
           </div>
-          <button [disabled]="disabledButtons.NuevaTiendaFormSubmitButton||!NuevaTiendaForm.valid" type="submit" class="btn btn-block btn-success">Crear</button>
+          <button [disabled]="disabledButtons.NuevaTiendaFormSubmitButton||!NuevaTiendaForm.valid" type="submit" class="btn btn-block btn-success">Update</button>
         </form>
-
+      </form>
     </div>
   </div>
 <!--  <form (ngSubmit)="crearTienda(NuevaTiendaForm)" #NuevaTiendaForm="ngForm">

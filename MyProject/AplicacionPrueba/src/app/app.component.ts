@@ -112,4 +112,19 @@ this.disabledButtons.NuevaTiendaFormSubmitButton=true;
         }
       )
   }
+
+  actualizarTienda(tienda:any){
+    let parametros={
+nombre:tienda.nombre
+    };
+    this._http.put(this._masterURL.url+"Tienda/"+tienda.id,parametros)
+      .subscribe(
+        (res:Response)=>{
+          console.log("Respuesta:",res.json());
+        },
+        (err)=>{
+     console.log("Error:",err);
+        }
+      )
+  }
 }

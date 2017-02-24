@@ -42,13 +42,16 @@
       <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2275">
-              <caret line="110" column="17" lean-forward="false" selection-start-line="110" selection-start-column="10" selection-end-line="110" selection-end-column="17" />
+            <state relative-caret-position="610">
+              <caret line="117" column="20" lean-forward="false" selection-start-line="117" selection-start-column="20" selection-end-line="117" selection-end-column="20" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
                 <element signature="e#676#715#0" expanded="false" />
-                <marker date="1487959666817" expanded="false" signature="1444:1498" ph="{...}" />
-                <marker date="1487959666817" expanded="false" signature="1514:1550" ph="{...}" />
+                <element signature="n#!!block;n#ngOnInit#0;n#AppComponent#0" expanded="false" />
+                <element signature="n#!!block;n#crearTienda#0;n#AppComponent#0" expanded="false" />
+                <element signature="n#!!block;n#borrarTienda#0;n#AppComponent#0" expanded="false" />
+                <marker date="1487966159225" expanded="false" signature="1444:1498" ph="{...}" />
+                <marker date="1487966159225" expanded="false" signature="1514:1550" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -67,14 +70,14 @@
       <file leaf-file-name="app.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="69" column="23" lean-forward="false" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
+            <state relative-caret-position="207">
+              <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#form#0;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -294,12 +297,12 @@
       <option name="presentableId" value="Default" />
       <updated>1487882327758</updated>
       <workItem from="1487882329097" duration="8689000" />
-      <workItem from="1487946833321" duration="12924000" />
+      <workItem from="1487946833321" duration="14584000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21613000" />
+    <option name="totallyTimeSpent" value="23273000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="800" y="0" width="800" height="860" extended-state="0" />
@@ -381,27 +384,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2275">
-          <caret line="110" column="17" lean-forward="false" selection-start-line="110" selection-start-column="10" selection-end-line="110" selection-end-column="17" />
+        <state relative-caret-position="610">
+          <caret line="117" column="20" lean-forward="false" selection-start-line="117" selection-start-column="20" selection-end-line="117" selection-end-column="20" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
             <element signature="e#676#715#0" expanded="false" />
-            <marker date="1487959666817" expanded="false" signature="1444:1498" ph="{...}" />
-            <marker date="1487959666817" expanded="false" signature="1514:1550" ph="{...}" />
+            <element signature="n#!!block;n#ngOnInit#0;n#AppComponent#0" expanded="false" />
+            <element signature="n#!!block;n#crearTienda#0;n#AppComponent#0" expanded="false" />
+            <element signature="n#!!block;n#borrarTienda#0;n#AppComponent#0" expanded="false" />
+            <marker date="1487966159225" expanded="false" signature="1444:1498" ph="{...}" />
+            <marker date="1487966159225" expanded="false" signature="1514:1550" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MyProject/AplicacionPrueba/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="69" column="23" lean-forward="false" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
+        <state relative-caret-position="207">
+          <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#form#0;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
