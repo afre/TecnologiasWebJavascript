@@ -74,6 +74,7 @@ this.disabledButtons.NuevaTiendaFormSubmitButton=true;
       .subscribe((res) => {
           console.log("No hubo errores");
           console.log(res);
+          this.tiendas.push(res.json());
           this.nuevaTienda = {};
           this.disabledButtons.NuevaTiendaFormSubmitButton=false;
         },
