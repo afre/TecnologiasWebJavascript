@@ -36,8 +36,16 @@
     <div class="col-sm-6">
       <h1>{{nuevaTienda.nombre}}</h1>
     </div>
-    <div class="col-sm-12">
+    <!--<div class="col-sm-12">
       <pre>{{tiendas|json}}</pre>
+    </div>-->
+
+
+  </div>
+  <div class="row">
+    <div class="col-sm-3" *ngFor="let tienda of tiendas">
+      <h3>{{tienda.nombre}}</h3>
+      <p>{{tienda.id}}</p>
     </div>
   </div>
 <!--  <form (ngSubmit)="crearTienda(NuevaTiendaForm)" #NuevaTiendaForm="ngForm">
