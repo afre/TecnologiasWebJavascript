@@ -14,8 +14,10 @@
     <div class="col-sm-6">
       <form (ngSubmit)="crearTienda(NuevaTiendaForm)" #NuevaTiendaForm="ngForm">
         <div class="form-group">
+
           <label>Tienda</label>
-         <span *ngIf="nombre.errors" [hidden]="nombre.error">Hola hay errores</span>
+         <span class="bg-primary" *ngIf="nombre.errors &&(nombre.dirty||nombre.touched)">Ingrese un nombre con 4 caracteres</span>
+          <!--[hidden]="nombre.error"-->
           <input required
                  minlength="4"
                  type="text"
