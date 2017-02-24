@@ -41,7 +41,13 @@ this._http.get(this._masterURL.url+"Tienda")
   (res:Response) => {
     console.log("No hubo errores");
     console.log(res.json());
-    this.tiendas=res.json();
+    this.tiendas=res.json()
+      .map(
+        (value)=>{
+          value.formularioCerrado=true;
+          return value;
+        }
+      );
     /*this.nuevaTienda = {};
     this.disabledButtons.NuevaTiendaFormSubmitButton=false;*/
   },
@@ -120,6 +126,7 @@ nombre:tienda.nombre
     this._http.put(this._masterURL.url+"Tienda/"+tienda.id,parametros)
       .subscribe(
         (res:Response)=>{
+          tienda.formularioCerrado=!tienda.formularioCerrado;
           console.log("Respuesta:",res.json());
         },
         (err)=>{
