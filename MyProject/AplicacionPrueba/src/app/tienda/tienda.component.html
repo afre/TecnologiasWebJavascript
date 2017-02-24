@@ -64,6 +64,9 @@
           <button class="btn btn-block btn-danger"
                   (click)="borrarTienda(tienda.id)">Borrar</button>
         </div>
+        <div class="col-sm-12">
+          <a [routerLink]="[tienda.id,'producto']">Ir a Productos</a>
+        </div>
       </div>
       <!--<button class="btn btn-block btn-danger"
       (click)="borrarTienda(tienda.id)">Borrar</button>-->
