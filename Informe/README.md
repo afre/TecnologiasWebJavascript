@@ -1,4 +1,4 @@
-# Node Package Manager
+# Sails.js
 
 ### Materia : `Tecnologías Web con JavaScript`
 
@@ -6,11 +6,11 @@
 <img src="http://www.javatpoint.com/images/javascript/javascript_logo.png" width="300" height="200">
 </p>
 
-### Tema : `Node Package Manager` 
-### Fecha : `2016-11-30`
+### Tema : `Sails.js` 
+### Fecha : `2016-12-21`
 ### Estudiante : `Alex José Freire Bustos`
 ### Profesor : `Tania Calle - Adrian Eguez`
-### Número de informe : `4`
+### Número de informe : `5`
 
 <a name="cabecera"></a>
 ## Índice de contenidos
@@ -19,23 +19,27 @@
 - <a href="#tema">Tema</a>
 - <a href="#objetivos">Objetivos</a>
 - <a href="#marco-teorico">Marco Teorico</a>
-  * <a href="#npm">NPM</a>
-  * <a href="#express">ExpressJS</a>
-  * <a href="#html">Métodos de petición en ExpressJS</a>
+  * <a href="#mvc">Modelo - Vista - Controlador</a>
+  * <a href="#sails">Sails.js</a>
+  * <a href="#api">API</a>
+  * <a href="#assets">Assets</a>
+  * <a href="#config">Config</a>
+  * <a href="#tasks">Tasks</a>
+  * <a href="#views">Views</a>
 - <a href="#desarrollo">Desarrollo de la Práctica</a>
 - <a href="#conrec">Conclusiones y Recomendaciones</a> 
 - <a href="#bibliografia">Bibliografía</a>
 
 <a name="tema"></a>
 ## Tema
-El tema de la práctica es: `Node Package Manager`
+El tema de la práctica es: `Sails.js`
 
 <a name="objetivos"></a>
 ## Objetivos
 
-- Entender el funcionamiento de los paquetes de Node.js.
-- Conocer la utilidad del framework Express.js de Node.js.
-- Aprender a usar los distintos métodos de petición de http.
+- Ampliar el conocimiento sobre el patrón de diseño Modelo-Vista-Controlador.
+- Aprender a usar el framework Sails.js.
+- Conocer la estructura de un Sails App y el funcionameinto de cada uno de sus componentes.
 
 <a name="marco-teorico"></a>
 ## Marco Teorico
