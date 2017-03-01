@@ -19,7 +19,7 @@
 - <a href="#tema">Tema</a>
 - <a href="#objetivos">Objetivos</a>
 - <a href="#marco-teorico">Marco Teorico</a>
-  * <a href="#mvc">Modelo - Vista - Controlador</a>
+  * <a href="#mvc">Modelo-Vista-Controlador</a>
   * <a href="#sails">Sails.js</a>
   * <a href="#api">API</a>
   * <a href="#assets">Assets</a>
@@ -43,21 +43,32 @@ El tema de la práctica es: `Sails.js`
 
 <a name="marco-teorico"></a>
 ## Marco Teorico
-<a name="npm"></a>
-### NPM
-NPM es un administrador de paquetes para Javascript que permite buscar, compartir y reusar código de otros desarrolladores para luego ensamblarlo de nuevas maneras. NPM es un proyecto separado de Node.js; pero, suele venir incluida en su instalación <a href="#1">[1]</a>.
-
+<a name="mvc"></a>
+### Modelo-Vista-Controlador
+El Modelo-Vista-Controlador (MVC) es un conjunto de patrones que están juntos en un mismo 
+diseño <a href="#1">[1]</a>. Como su nombre lo indica, está formado por las siguientes 
+partes: un modelo, una vista y un controlador.
+- Modelo
+Es el encargado de mantener todos los datos, estados y la lógica de la aplicación
+<a href="#2">[2]</a>. Provee una interfaz para manipulación y recupera los estados para 
+luego enviar notificaciones de los cambios realizados <a href="#1">[1]</a>.
+- Vista
+Le da al usuario una presentación del modelo <a href="#2">[2]</a>. La vista solicita los 
+estados y los datos que necesita al modelo para desplegarlos <a href="#2">[2]</a>.
+- Controlador
+Es el encargado de recibir las entradas de los usuarios <a href="#2">[2]</a>. 
+También, descifra su significado para enviarlas al modelo <a href="#2">[2]</a>.
 <a href="#cabecera">A la cabecera</a>
-<a name="express"></a>
-### ExpressJS
+<a name="sails"></a>
+### Sails.js
 Express es un framework de aplicaciones web de Node.js que provee un conjunto de características 
 para aplicaciones móviles y web <a href="#2">[2]</a>. Su filosofía es abastecer herramientas 
 robustas y pequeñas para servidores http. No fuerza al usuario a usar motores de plantillas o 
 Mapeos Objeto-Relacional (ORM) específicos al usuario <a href="#3">[3]</a>.
 
 <a href="#cabecera">A la cabecera</a>
-<a name="html"></a>
-### Métodos de petición en ExpressJS
+<a name="api"></a>
+### API
 El direccionamiento se refiere a como debe responder una determinada aplicación a una 
 solicitud del cliente. La definición de la ruta tiene la siguiente estructura:
 ```javascript
@@ -76,6 +87,38 @@ nuevo subordinado del recurso específico.
 documento.
 - OPTIONS. Retorna el método HTTP que el servidor soporta.
 - CONNECT. Es usado cono un proxy que puede dinámicamente cambiar a un tunel. <a href="#5">[5]</a>.
+
+<a href="#cabecera">A la cabecera</a>
+<a name="assets"></a>
+### Assets
+Express es un framework de aplicaciones web de Node.js que provee un conjunto de características 
+para aplicaciones móviles y web <a href="#2">[2]</a>. Su filosofía es abastecer herramientas 
+robustas y pequeñas para servidores http. No fuerza al usuario a usar motores de plantillas o 
+Mapeos Objeto-Relacional (ORM) específicos al usuario <a href="#3">[3]</a>.
+
+<a href="#cabecera">A la cabecera</a>
+<a name="config"></a>
+### Config
+Express es un framework de aplicaciones web de Node.js que provee un conjunto de características 
+para aplicaciones móviles y web <a href="#2">[2]</a>. Su filosofía es abastecer herramientas 
+robustas y pequeñas para servidores http. No fuerza al usuario a usar motores de plantillas o 
+Mapeos Objeto-Relacional (ORM) específicos al usuario <a href="#3">[3]</a>.
+
+<a href="#cabecera">A la cabecera</a>
+<a name="tasks"></a>
+### Tasks
+Express es un framework de aplicaciones web de Node.js que provee un conjunto de características 
+para aplicaciones móviles y web <a href="#2">[2]</a>. Su filosofía es abastecer herramientas 
+robustas y pequeñas para servidores http. No fuerza al usuario a usar motores de plantillas o 
+Mapeos Objeto-Relacional (ORM) específicos al usuario <a href="#3">[3]</a>.
+
+<a href="#cabecera">A la cabecera</a>
+<a name="view"></a>
+### Views
+Express es un framework de aplicaciones web de Node.js que provee un conjunto de características 
+para aplicaciones móviles y web <a href="#2">[2]</a>. Su filosofía es abastecer herramientas 
+robustas y pequeñas para servidores http. No fuerza al usuario a usar motores de plantillas o 
+Mapeos Objeto-Relacional (ORM) específicos al usuario <a href="#3">[3]</a>.
 
 <a href="#cabecera">A la cabecera</a>
 
@@ -121,9 +164,10 @@ Se utilizarón los métodos http para el envió de mensajes al servidor.
 <a name="bibliografia"></a>
 ## Bibliografía
 
-<a name="1">[1] NPM. (2016). Get npm [Online]. Available: https://www.npmjs.com/get-npm</a>  
-<a name="2">[2] Node.js Foundation. (2016). Fast, unopinionated, minimalist web framework for Node.js 
-[Online]. Available: https://expressjs.com/</a>  
+<a name="1">[1] T. Sellarès. (n.d.). _The Model View Controller: a Composed Pattern_ 
+[Online]. Available: http://ima.udg.edu/~sellares/EINF-ES1/MVC-Toni.pdf</a>  
+<a name="2">[2] E. Freeman, "Patterns of Patterns: compound patterns", in _Head First Design 
+Patterns_, California, US: O'Reilly Media, 2004, pp. 500-576.</a>  
 <a name="3">[3] Node.js Foundation. (2016). Express [Online]. Available: 
 https://github.com/expressjs/express</a>  
 <a name="4">[4] Node.js Foundation. (2016). Direccionamiento básico [Online]. Available: 
