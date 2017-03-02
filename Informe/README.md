@@ -154,7 +154,7 @@ JavaScript y los templates en el lado del cliente serán compilados y enlazados 
 tags `<script>` o `<link>` <a href="#30">[30]</a>.
 
 <a href="#cabecera">A la cabecera</a>
-<a name="view"></a>
+<a name="views"></a>
 ### Carpeta views
 Contiene todas las vistas personalizadas del app <a href="#31">[31]</a>. Para crear 
 una vista personalizada, es necesario crear un archivo .ejs y configurar una ruta 
@@ -185,7 +185,7 @@ en la mayoría de los casos, este archivo no debe ser cambiado, en su lugar, la 
 personalizada debe ser añadida en la carpeta `tasks/` <a href="#36">[36]</a>.
 
 <a href="#cabecera">A la cabecera</a>
-<a name="view"></a>
+<a name="packagejson"></a>
 ### Archivo package.json
 Este contiene toda la configuración estándar para npm, por ejemplo, el nombre y 
 la versión de todos los módulos de Node.js de los cuales depende la app para ser 
@@ -196,29 +196,24 @@ ejecutada <a href="#37">[37]</a>.
 <a name="desarrollo"></a>
 ## Desarrollo del informe
 
-### Instalación de Expressjs
-Se utilizó el framework de Expressjs para la configuración de un servidor web.
-![express](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/express1.png?raw=true)
-![express](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/express2.png?raw=true)
+### Levantar el servidor desarrollado en Sails.js
+Instalar sails, crear un nuevo proyecto, levantar el servidor y probar que funciona la página web.
+![install](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/install1.jpg?raw=true)
+![install](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/install2.jpg?raw=true)
+![install](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/install3.jpg?raw=true)
+![install](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/install4.jpg?raw=true)
 
-### Configuración de paquetes npm
-Se utilizó el administrador de paquetes de Node.js para la publicación de paquetes en internet.
-![npm](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/npm1.png?raw=true)
-![npm](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/npm2.png?raw=true)
-![npm](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/npm3.png?raw=true)
-![npm](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/npm4.png?raw=true)
+### Generar API
+Generar APIs: Mascota, Raza y Usuario.
+![api](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/api1.jpg?raw=true)
 
-### Direccionamiento básico
-Se utilizarón los métodos http para el envió de mensajes al servidor.
-![routing](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/routing1.png?raw=true)
-![routing](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/routing2.png?raw=true)
-![routing](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/routing3.png?raw=true)
-![routing](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/routing4.png?raw=true)
-![routing](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/routing5.png?raw=true)
-![routing](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/routing6.png?raw=true)
-![routing](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/routing7.png?raw=true)
-![routing](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/routing8.png?raw=true)
-![routing](https://github.com/afre/TecnologiasWebJavascript/blob/07-Nodejs-02/Informe/Imagenes/routing9.png?raw=true)
+### Generar Controladores
+Generar controladores: Rutas y Saludo.
+![controller](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/controller1.jpg?raw=true)
+
+### Generar Modelos
+Generar modelo Administrador.
+![model](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/model1.jpg?raw=true)
 
 <a href="#cabecera">A la cabecera</a>
 
@@ -244,70 +239,70 @@ https://github.com/balderdashy/sails</a>
 <a name="4">[4] The Sails Company. (n.d.). _What is Sails?_ [Online]. Available: 
 http://sailsjs.com/whats-that</a>  
 <a name="5">[5] The Sails Company. (n.d.). _api_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/api</a>
+http://sailsjs.com/documentation/anatomy/api</a>  
 <a name="6">[6] The Sails Company. (n.d.). _assets_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/assets</a>
+http://sailsjs.com/documentation/anatomy/assets</a>  
 <a name="7">[7] The Sails Company. (n.d.). _config_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/config</a>
+http://sailsjs.com/documentation/anatomy/config</a>  
 <a name="8">[8] The Sails Company. (n.d.). _config_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/config</a>
+http://sailsjs.com/documentation/anatomy/config</a>  
 <a name="9">[9] The Sails Company. (n.d.). _config/env_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/config/env</a>
+http://sailsjs.com/documentation/anatomy/config/env</a>  
 <a name="10">[10] The Sails Company. (n.d.). _config/locales_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/config/locales</a>
+http://sailsjs.com/documentation/anatomy/config/locales</a>  
 <a name="11">[11] The Sails Company. (n.d.). _config/blueprints.js_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/config/blueprints.js</a>
+http://sailsjs.com/documentation/anatomy/config/blueprints.js</a>  
 <a name="12">[12] The Sails Company. (n.d.). _config/bootstrap.js_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/config/bootstrap.js</a>
+http://sailsjs.com/documentation/anatomy/config/bootstrap.js</a>  
 <a name="13">[13] The Sails Company. (n.d.). _config/connections.js_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/config/connections.js</a>
+http://sailsjs.com/documentation/anatomy/config/connections.js</a>  
 <a name="14">[14] The Sails Company. (n.d.). _config/cors.js_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/config/cors.js</a>
+http://sailsjs.com/documentation/anatomy/config/cors.js</a>  
 <a name="15">[15] The Sails Company. (n.d.). _config/csrf.js_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/config/csrf.js</a>
+http://sailsjs.com/documentation/anatomy/config/csrf.js</a>  
 <a name="16">[16] The Sails Company. (n.d.). _config/globals.js?_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/config/globals.js</a>
+http://sailsjs.com/documentation/anatomy/config/globals.js</a>  
 <a name="17">[17] The Sails Company. (n.d.). _config/http.js_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/config/http.js</a>
+http://sailsjs.com/documentation/anatomy/config/http.js</a>  
 <a name="18">[18] The Sails Company. (n.d.). _config/i18n.js_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/config/i18n.js</a>
+http://sailsjs.com/documentation/anatomy/config/i18n.js</a>  
 <a name="19">[19] The Sails Company. (n.d.). _config/local.js_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/config/local.js</a>
+http://sailsjs.com/documentation/anatomy/config/local.js</a>  
 <a name="20">[20] The Sails Company. (n.d.). _config/log.js_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/config/log.js</a>
+http://sailsjs.com/documentation/anatomy/config/log.js</a>  
 <a name="21">[21] The Sails Company. (n.d.). _config/models.js?_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/config/models.js</a>
+http://sailsjs.com/documentation/anatomy/config/models.js</a>  
 <a name="22">[22] The Sails Company. (n.d.). _config/policies.js_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/config/policies.js</a>
+http://sailsjs.com/documentation/anatomy/config/policies.js</a>  
 <a name="23">[23] The Sails Company. (n.d.). _config/routes.js?_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/config/routes.js</a>
+http://sailsjs.com/documentation/anatomy/config/routes.js</a>  
 <a name="24">[24] The Sails Company. (n.d.). _config/session.js?_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/config/session.js</a>
+http://sailsjs.com/documentation/anatomy/config/session.js</a>  
 <a name="25">[25] The Sails Company. (n.d.). _config/sockets.js?_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/config/sockets.js</a>
+http://sailsjs.com/documentation/anatomy/config/sockets.js</a>  
 <a name="26">[26] The Sails Company. (n.d.). _config/views.js_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/config/views.js</a>
+http://sailsjs.com/documentation/anatomy/config/views.js</a>  
 <a name="27">[27] The Sails Company. (n.d.). _tasks_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/tasks</a>
+http://sailsjs.com/documentation/anatomy/tasks</a>  
 <a name="28">[28] The Sails Company. (n.d.). _tasks/config_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/tasks/config</a>
+http://sailsjs.com/documentation/anatomy/tasks/config</a>  
 <a name="29">[29] The Sails Company. (n.d.). _tasks/register_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/tasks/register</a>
+http://sailsjs.com/documentation/anatomy/tasks/register</a>  
 <a name="30">[30] The Sails Company. (n.d.). _tasks/pipeline.js_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/tasks/pipeline.js</a>
+http://sailsjs.com/documentation/anatomy/tasks/pipeline.js</a>  
 <a name="31">[31] The Sails Company. (n.d.). _views_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/views</a>
+http://sailsjs.com/documentation/anatomy/views</a>  
 <a name="32">[32] The Sails Company. (n.d.). _views/homepage.ejs_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/views/homepage.ejs</a>
+http://sailsjs.com/documentation/anatomy/views/homepage.ejs</a>  
 <a name="33">[33] The Sails Company. (n.d.). _views/layout.ejs_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/views/layout.ejs</a>
+http://sailsjs.com/documentation/anatomy/views/layout.ejs</a>  
 <a name="34">[34] The Sails Company. (n.d.). _.sailsrc_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/.sailsrc</a>
+http://sailsjs.com/documentation/anatomy/.sailsrc</a>  
 <a name="35">[35] The Sails Company. (n.d.). _app.js_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/app.js</a>
+http://sailsjs.com/documentation/anatomy/app.js</a>  
 <a name="36">[36] The Sails Company. (n.d.). _Gruntfile.js_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/gruntfile.js</a>
+http://sailsjs.com/documentation/anatomy/gruntfile.js</a>  
 <a name="37">[37] The Sails Company. (n.d.). _package.json_ [Online]. Available: 
-http://sailsjs.com/documentation/anatomy/package.json</a>
+http://sailsjs.com/documentation/anatomy/package.json</a>  
 
 <a href="#cabecera">A la cabecera</a>
