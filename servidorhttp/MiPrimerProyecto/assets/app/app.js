@@ -1,1 +1,1 @@
-alert('advertencia')
+alert("No es bueno usar alertas");

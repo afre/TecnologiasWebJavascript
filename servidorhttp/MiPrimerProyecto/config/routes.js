@@ -32,21 +32,22 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
-  },
+  'get /': 'RutasController.home',
+  'get /Inicio': 'RutasController.home',
 
- '/quito':{
-    view:'q1'
-},
-    '/guayaquil':{
-    view:'g1'
-},
-'/cuenca':{
-    view:'c1'
-}
+  'get /ListarUsuarios': 'RutasController.listarUsuarios',
+  'get /EditarUsuario': 'RutasController.editarUsuario',
+  'get /CrearUsuario': 'RutasController.crearUsuario',
 
-/***************************************************************************
+  'get /ListarMascotas': 'RutasController.listarMascotas',
+  'get /EditarMascota': 'RutasController.editarMascota',
+  'get /CrearMascota': 'RutasController.crearMascota',
+
+  'get /ListarRazas': 'RutasController.listarRazas',
+  'get /EditarRaza': 'RutasController.crearRaza',
+  'get /CrearRaza': 'RutasController.crearRaza',
+
+  /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
   *                                                                          *
