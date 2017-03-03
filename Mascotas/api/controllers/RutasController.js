@@ -141,6 +141,39 @@ module.exports = {
         razas: razasEncontrados
       })
     });
-  }
+  },
+    editarRaza: function (req, res) {
+
+    var parametros = req.allParams();
+    if (parametros.id) {
+      Raza.findOne({
+        id: parametros.id
+      }).exec(function (error, razaEncontrado) {
+        if (error) return res.view('error', {
+          title: 'Error',
+          error: {
+            descripcion: 'Fallo al buscar la raza',
+            url: '/crearRazas'
+          }
+        });
+
+         return res.view('vistas/Raza/editarRaza', {
+            title: 'Editar Raza - ' + razaEncontrado.nombre,
+            razas: razaEncontrado,
+            
+          })
+
+
+      });
+
+    } else {
+      return res.view('error', {
+        title: 'Error',
+        error: {
+          descripcion: 'No existe el ID'
+        }
+      });
+    }
+    }
 };
 

@@ -1,0 +1,24 @@
+<div style='background-color:white;color:black;'>
+
+  <h1>Editar Razas</h1>
+  <p>¡Edite las razas !</p>
+  <div class="row">
+    <div class="col-sm-8">
+  <form action="raza/editarRaza" method="post">
+    <div class="form-group">
+      <label>Nombre</label>
+      <input required type="text" class="form-control"  placeholder="Nombre" name="nombre">
+    </div>
+<input type="hidden" name="id" value="<%=razas.id%>">
+    <button type="submit" class="btn btn-success">Editar Raza</button>
+    <br>
+
+  </form>
+</div>
+        <div class="col-sm-4">
+
+            <h3 class="text-center"> <%=razas.nombre%></h3>
+            
+        </div>
+      </div>  
+</div>
