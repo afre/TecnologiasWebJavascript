@@ -4,9 +4,7 @@
  * @description :: Server-side logic for managing Saludoes
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
-
-var nodemailer = require('nodemailer');
-
+//var nodemailer = require('nodemailer');
 module.exports = {
 
     hola: function (req, res) {
@@ -69,3 +67,4 @@ module.exports = {
     
 
 };
+
