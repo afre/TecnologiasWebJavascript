@@ -215,15 +215,83 @@ Generar controladores: Rutas y Saludo.
 Generar modelo Administrador.
 ![model](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/model1.jpg?raw=true)
 
+### Configurar archivos de controladores
+Configurar los archivos de los controladores MascotaController.js, RazaController.js, 
+RutasController.js, SaludoController.js y UsuarioController.js.
+![filecontroller](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/fileController1.jpg?raw=true)
+![filecontroller](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/fileController2.jpg?raw=true)
+![filecontroller](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/fileController3.jpg?raw=true)
+![filecontroller](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/fileController4.jpg?raw=true)
+![filecontroller](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/fileController5.jpg?raw=true)
+
+### Configurar archivos de modelos
+Configurar los archivos de los modelos Administrador.js, Mascota.js, Raza.js y Usuario.js.
+![filemodel](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/fileModel1.jpg?raw=true)
+![filemodel](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/fileModel2.jpg?raw=true)
+![filemodel](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/fileModel3.jpg?raw=true)
+![filemodel](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/fileModel4.jpg?raw=true)
+
+### Configurar archivos de la carpeta assets
+Añadir archivos estáticos que van a formar parte de al página web.
+![fileassets](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/fileAssets1.jpg?raw=true)
+
+### Configurar archivos de la carpeta config
+Añadir rutas al archivo routes.js.
+![fileroutes](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/fileConfig1.jpg?raw=true)
+
+### Configurar archivos de la carpeta tasks
+Configurar CSS y templates en el archivo pipeline.js.
+![filetasks](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/fileTasks1.jpg?raw=true)
+
+### Configurar archivos de la carpeta views
+Configurar el archivo layout.ejs y crear vistas para crear, editar y listar mascotas, 
+razas y usuarios y para las ciudades de Quito, Guayaquil y Cuenca.
+![fileviews](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/fileViews1.jpg?raw=true)
+![fileviews](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/fileViews2.jpg?raw=true)
+![fileviews](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/fileViews3.jpg?raw=true)
+![fileviews](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/fileViews4.jpg?raw=true)
+![fileviews](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/fileViews5.jpg?raw=true)
+![fileviews](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/fileViews6.jpg?raw=true)
+![fileviews](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/fileViews7.jpg?raw=true)
+![fileviews](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/fileViews8.jpg?raw=true)
+![fileviews](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/fileViews9.jpg?raw=true)
+![fileviews](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/fileViews10.jpg?raw=true)
+![fileviews](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/fileViews11.jpg?raw=true)
+![fileviews](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/fileViews12.jpg?raw=true)
+![fileviews](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/fileViews13.jpg?raw=true)
+
+### Probar que la página web funciona
+Subir el servidor de Sails y acceder a la direccion de localhost:1337.
+![web](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/web1.jpg?raw=true)
+
+### Crear Usuario
+Registrar un usuario en la página web.
+![webcrear](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/webCrear1.jpg?raw=true)
+![webcrear](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/webCrear2.jpg?raw=true)
+![webcrear](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/webCrear3.jpg?raw=true)
+
+### Actualizar Usuario
+Cambiar la información ingresada del usuario.
+![webactualizar](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/webActualizar1.jpg?raw=true)
+![webactualizar](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/webActualizar2.jpg?raw=true)
+![webactualizar](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/webActualizar3.jpg?raw=true)
+![webactualizar](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/webActualizar4.jpg?raw=true)
+
+### Eliminar Usuario
+Borrar el usuario ingresado anteriormente.
+![webborrar](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/webBorrar1.jpg?raw=true)
+![webborrar](https://github.com/afre/TecnologiasWebJavascript/blob/11-sails-02/Informe/Imagenes/webBorrar2.jpg?raw=true)
+
 <a href="#cabecera">A la cabecera</a>
 
 <a name="conrec"></a>
 ## Conclusiones y Recomendaciones
 
-- Se recomienda el uso de ExpressJS para simplifcar el trabajo de programación en Javascript y Node.js, a través del uso de funciones ya definidos en el framework.
-- Es necesario la creación de una cuenta de usuario en la página de npm para poder publicar paquetes propios.
-- Por medio del método get, es posible enviar parámetros al servidor por medio de la url.
-- No se recomienda el uso del método get para envió de información sensible; puesto que, esta puede ser facilmente interceptada por una atacante.
+- Sails le ahorra tiempo al desarrollador web; ya que, a través del uso de templates, es posible crear varias vistas que se basan en un mismo diseño con un menor esfuerzo.
+- Sails es especialmente usado en el back-end y puede ser combinando con otros frameworks para que funcionen en el front-ent, como: AngularJS.
+- Se recomienda evitar modificaciones en el pipeline.js y usar las configuraciones ya establecidas por defecto; ya que, el producir 
+cambios sin un adecuado conocimiento puede inutilizar el Grunt y Sails puede dejar de funcionar.
+- Se aconseja revisar la documentación oficial de Sails para entender de mejor manera el funcionamiento de cada una de las carpetas y archivos que conforman la aplicación.
 
 <a href="#cabecera">A la cabecera</a>
 
@@ -260,7 +328,7 @@ http://sailsjs.com/documentation/anatomy/config/connections.js</a>
 http://sailsjs.com/documentation/anatomy/config/cors.js</a>  
 <a name="15">[15] The Sails Company. (n.d.). _config/csrf.js_ [Online]. Available: 
 http://sailsjs.com/documentation/anatomy/config/csrf.js</a>  
-<a name="16">[16] The Sails Company. (n.d.). _config/globals.js?_ [Online]. Available: 
+<a name="16">[16] The Sails Company. (n.d.). _config/globals.js_ [Online]. Available: 
 http://sailsjs.com/documentation/anatomy/config/globals.js</a>  
 <a name="17">[17] The Sails Company. (n.d.). _config/http.js_ [Online]. Available: 
 http://sailsjs.com/documentation/anatomy/config/http.js</a>  
@@ -270,15 +338,15 @@ http://sailsjs.com/documentation/anatomy/config/i18n.js</a>
 http://sailsjs.com/documentation/anatomy/config/local.js</a>  
 <a name="20">[20] The Sails Company. (n.d.). _config/log.js_ [Online]. Available: 
 http://sailsjs.com/documentation/anatomy/config/log.js</a>  
-<a name="21">[21] The Sails Company. (n.d.). _config/models.js?_ [Online]. Available: 
+<a name="21">[21] The Sails Company. (n.d.). _config/models.js_ [Online]. Available: 
 http://sailsjs.com/documentation/anatomy/config/models.js</a>  
 <a name="22">[22] The Sails Company. (n.d.). _config/policies.js_ [Online]. Available: 
 http://sailsjs.com/documentation/anatomy/config/policies.js</a>  
-<a name="23">[23] The Sails Company. (n.d.). _config/routes.js?_ [Online]. Available: 
+<a name="23">[23] The Sails Company. (n.d.). _config/routes.js_ [Online]. Available: 
 http://sailsjs.com/documentation/anatomy/config/routes.js</a>  
-<a name="24">[24] The Sails Company. (n.d.). _config/session.js?_ [Online]. Available: 
+<a name="24">[24] The Sails Company. (n.d.). _config/session.js_ [Online]. Available: 
 http://sailsjs.com/documentation/anatomy/config/session.js</a>  
-<a name="25">[25] The Sails Company. (n.d.). _config/sockets.js?_ [Online]. Available: 
+<a name="25">[25] The Sails Company. (n.d.). _config/sockets.js_ [Online]. Available: 
 http://sailsjs.com/documentation/anatomy/config/sockets.js</a>  
 <a name="26">[26] The Sails Company. (n.d.). _config/views.js_ [Online]. Available: 
 http://sailsjs.com/documentation/anatomy/config/views.js</a>  
